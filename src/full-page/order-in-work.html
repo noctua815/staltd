@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', { "login": true })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Личный кабинет</a></li>
+                                <li><a href="">Заявки</a></li>
+                                <li>Заявка N12536</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Заявка N12536</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Заявка -->
+                <div class="section">
+                    <div class="wrapper">
+                        <!-- Статус заявки -->
+                        <ul class="order-progress">
+                            <li class="completed">Готова к отправке</li>
+                            <li class="completed">Отправлена</li>
+                            <li class="active">Принята в обработку</li>
+                            <li>Комплектуется</li>
+                            <li>Готова к отгрузке</li>
+                            <li>Товар отгружен</li>
+                        </ul>
+                        <!-- END Статус заявки -->
+                    </div>
+                </div>
+
+                <!-- Список товаров и услуг -->
+                <div class="order-section">
+
+                    <!-- Товары -->
+                    <div class="order-section__block" data-order-block="items">
+                        <div class="order-section__title">
+                            <div class="wrapper">
+                                <div class="section-header">
+                                    <h2>Товары</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-section__body" id="order-list">
+                            <div class="order-item-list">
+                                <div class="order-item">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-item__value" data-dimention="п.м.">14</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price">120</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox fixed">
+                                                    <input class="checkbox__input" id="checkBox1" type="checkbox" checked>
+                                                    <label class="checkbox__label" for="checkBox1">Монтаж</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-item__value" data-dimention="п.м.">14</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price">120</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox fixed">
+                                                    <input class="checkbox__input" id="checkBox2" type="checkbox" checked>
+                                                    <label class="checkbox__label" for="checkBox2">Монтаж</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-item__value" data-dimention="п.м.">14</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price">120</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox fixed">
+                                                    <input class="checkbox__input" id="checkBox3" type="checkbox" checked>
+                                                    <label class="checkbox__label" for="checkBox3">Монтаж</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-item__value" data-dimention="п.м.">14</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price">120</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox fixed">
+                                                    <input class="checkbox__input" id="checkBox4" type="checkbox" checked>
+                                                    <label class="checkbox__label" for="checkBox4">Монтаж</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-item__value" data-dimention="п.м.">14</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price">120</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service"></div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Товары -->
+
+                    <!-- Услуги -->
+                    <div class="order-section__block" data-order-block="services">
+                        <div class="order-section__title">
+                            <div class="wrapper">
+                                <div class="section-header">
+                                    <h2>Услуги</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-section__body" id="service-list">
+                            <div class="order-item-list">
+                                <div class="order-item order-item--service">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/service-1.html">Монтаж сэндвич-панелей </a>
+                                        </div>
+
+                                        <div class="order-item__info-col">
+                                            <div class="order-item__info">
+                                                250 м2, Луга, тип панелей — кровельные, наполнение панелей — минеральная вата, толщина панелей — 5 см
+                                            </div>
+                                        </div>
+
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price">120</div>
+                                        </div>
+
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item order-item--service">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/service-1.html">Фасадные работы</a>
+                                        </div>
+
+                                        <div class="order-item__info-col">
+                                            <div class="order-item__info">
+                                                250 м2, Луга, тип панелей — кровельные, наполнение панелей — минеральная вата, толщина панелей — 5 см
+                                            </div>
+                                        </div>
+
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">120</div>
+                                        </div>
+
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Услуги -->
+
+                    <div class="order-section__total">
+                        <div class="wrapper">
+                            <div class="total-sum">
+                                <div class="total-sum__text">Общая сумма</div>
+                                <div class="total-sum__value price">12 530</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Список товаров и услуг -->
+
+                <!-- END Заявка -->
+
+                <!-- Параметры заказы -->
+                <div class="order-params">
+                    <div class="wrapper">
+                        <div class="order-params__head">
+                            <div class="section-header">Параметры заказа</div>
+                            <div class="section-header recom-switch js-toggle-switch" data-hide="params-block"><span class="recom-switch__text js-toggle-switch-text">СКРЫТЬ</span></div>
+                        </div>
+
+                        <div class="order-params__body js-toggle-hide" data-hide-block="params-block">
+                            <div class="row">
+                                <div class="col col-8 text-content">
+                                    <div class="order-params-block">
+                                        <div class="order-params-block__head">
+                                            <div class="small-caps">Заказчик</div>
+                                        </div>
+
+                                        <div class="order-params-block__body">
+                                            <p>Константин Константинович Константинопольский <br/>
+                                            8 (123) 456-78-90<br/>
+                                            <a href="mailto:mail@mailbox.ru">mail@mailbox.ru</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-params-block">
+                                        <div class="order-params-block__head">
+                                            <div class="small-caps">КОНТРАГЕНТ</div>
+                                        </div>
+
+                                        <div class="order-params-block__body">
+                                            <p>ООО НП «Стальные человекоподобные роботы»</p>
+                                            <p></p>
+                                            <p>ИНН 34353535354<br/>
+                                            ОГРН 234242424242432342<br/>
+                                            КПП 24342342342424234243</p>
+                                            <p>Юридический адрес — Санкт-Петербург, проспект Непокоренных, д.49, литера А офис № 310, 3 этаж<br/>
+                                            Адрес для документов — Санкт-Петербург, проспект Непокоренных, д.49, литера А офис № 310, 3 этаж</p>
+                                            <p></p>
+                                            <p>Генеральный директор — Константин Константинович Константинопольский</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-params-block">
+                                        <div class="order-params-block__head">
+                                            <div class="small-caps">ОПЛАТА БЕЗНАЛИЧНЫМ РАСЧЕТОМ</div>
+                                        </div>
+
+                                        <div class="order-params-block__body">
+                                            <p>БИК 373747282034<br/>
+                                            Отделение Сбербанка в г. Санкт-Петербург №3434<br/>
+                                            Корр. счет — 373747000000000000282034237387 Расчетный счет — 373747000000000000282034237387</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-params-block">
+                                        <div class="order-params-block__head">
+                                            <div class="small-caps">ДОСТАВКА</div>
+                                        </div>
+
+                                        <div class="order-params-block__body">
+                                            <p>По адресу — Санкт-Петербург, проспект Непокоренных, д.49, литера А офис № 310, 3 этаж</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Параметры заказы -->
+
+                <!-- Чат -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="chat-block">
+                            <div class="chat-block__wr">
+                                <div class="chat-block__info">
+                                    <div class="chat-block__info-row">
+                                        <div class="chat-block__info-title">
+                                            <div class="small-caps">Менеджер по заявке</div>
+                                        </div>
+
+                                        <div class="chat-block__info-manager">
+                                            <div class="staff-card">
+                                                <div class="staff-card__photo">
+                                                    <img class="staff-card__img" src="pic/staff/4.png" srcset="pic/staff/4@2x.png" alt="Имя">
+                                                </div>
+                                                <div class="staff-card__info">
+                                                    <div class="staff-card__name">Артём Бабенко</div>
+                                                    <div class="staff-card__phones">
+                                                        <a href="tel:+7 (951) 668-20-41" class="link-black">+7 (951) 668-20-41</a>
+                                                        <a href="tel:+7 (812) 449-46-48" class="link-black">+7 (812) 449-46-48 (доб. 261)</a>
+                                                    </div>
+                                                    <div class="staff-card__mail">
+                                                        <a href="mailto:ordin_nm@mail.ru">ordin_nm@mail.ru</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="chat-block__info-row">
+                                        <div class="chat-block__info-title">
+                                            <div class="small-caps">Документы и файлы</div>
+                                        </div>
+
+                                        <div class="chat-block__info-text">
+                                            <p>После оформления заказа здесь вы сможете скачать весь необходимый пакет документов, инструкции и сертификаты</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="chat-block__chat">
+                                    <div class="chat" id="chat">
+                                        <div class="chat__wr">
+                                            <div class="chat__status">
+                                                <div class="chat__status-text">Менеджер в сети</div>
+                                            </div>
+                                            <div class="chat__body js-chat-body">
+                                                <div class="chat__messages js-chat-messages-container">
+                                                    <div class="chat-message">
+                                                        <div class="chat-message__user">
+                                                            <img src="pic/staff/4.png" srcset="pic/staff/4@2x.png" sr alt="" class="chat-message__user-img">
+                                                        </div>
+                                                        <div class="chat-message__message">Да, мы включаем это в общую стоимость, можете не переживать и не волноваться по этому поводу. Все дополнительные расходы учтены нами. Выставлять вам счет?</div>
+                                                    </div>
+                                                    <div class="chat-message">
+                                                        <div class="chat-message__user">
+                                                            <div class="chat-message__user-name">Я</div>
+                                                        </div>
+                                                        <div class="chat-message__message">Скажите, а можно заплатить по безналу?</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat__message">
+                                                <div class="chat__message-wr">
+                                                    <form class="form chat-form" id="chat-form" action="">
+                                                        <div class="chat-form__input">
+                                                            <div class="form-field chat-form-field">
+                                                                <label for="chat-message">Ваше сообщение</label>
+                                                                <input class="js-field js-chat-message" id="chat-message" type="text" name="chat-message" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="chat-form__send">
+                                                            <button class="btn btn--send btn--disable js-chat-send" type="button" name="chat-send">
+                                                                <span class="btn__text">Отправить</span>
+                                                            </button>
+                                                        </div>
+
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                            <div class="chat__footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Чат -->
+            </main>
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

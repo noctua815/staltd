@@ -1,0 +1,227 @@
+.account {
+    margin-top: 30px;
+
+    &__main {
+        display: flex;
+        min-height: 200px;
+        @media (max-width: $bigPhone) {
+            display: block;
+        }
+    }
+
+    &__block {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 14px 20px;
+        border: 1px solid $cool-blue;
+        color: $cool-blue;
+        transition: color 0.3s ease, background-color 0.3s ease;
+
+        & + & {
+            margin-left: 20px;
+            @media (max-width: $bigPhone) {
+                margin: 20px 0 0;
+            }
+        }
+
+        &-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        &-title {
+            margin-top: 21px;
+        }
+
+        &:hover {
+            background-color: $cool-blue;
+            color: $white;
+        }
+    }
+
+    &__orders {
+        width: calc(704 / 1180 * 100%);
+        @media (max-width: $bigPhone) {
+            width: 100%;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__order {
+        display: flex;
+        margin-right: 20px;
+        @media (max-width: $bigPhone) {
+            margin-bottom: 10px;
+        }
+
+        &-value {
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        &-title {
+            max-width: 70px;
+            margin-left: 5px;
+            font-size: 12px;
+            line-height: 1.33;
+        }
+    }
+
+    &__person {
+        width: calc(459 / 1180 * 100%);
+        @media (max-width: $bigPhone) {
+            width: 100%;
+        }
+
+        &-name {
+            font-size: 32px;
+            line-height: 1;
+        }
+    }
+
+    &__logout {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+/*
+ * Personal information
+ */
+.personal-info {
+    margin-top: 37px;
+
+    &__section {
+        &-content {
+            margin-top: 27px;
+        }
+
+        & + & {
+            margin-top: 40px;
+        }
+
+        & + &--social,
+        &--social {
+            margin-top: 55px;
+
+            .personal-info__section-content {
+                margin-top: 23px;
+                padding-bottom: 13px;
+            }
+        }
+
+        & + &--save,
+        &--save {
+            margin-top: 63px;
+        }
+
+        &--save {
+            margin-bottom: 58px;
+        }
+    }
+}
+
+.address-copy {
+    display: none;
+}
+/*
+ * Social buttons
+ */
+.social-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    height: 40px;
+    border: 1px solid $cool-blue;
+    margin-right: 20px;
+    @media (max-width: $bigPhone) {
+        margin-bottom: 10px;
+    }
+
+    &__main {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 6px 19px;
+        color: $cool-blue;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $cool-blue;
+            color: $white;
+
+            .social-btn__svg {
+                fill: $white;
+            }
+        }
+    }
+
+    &__del {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 14px;
+        border-left: 1px solid $cool-blue;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $cool-blue;
+            color: $white;
+
+            .social-btn__svg {
+                fill: $white;
+            }
+        }
+    }
+
+    &__link {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__svg,
+    svg {
+        max-height: 100%;
+        fill: $cool-blue;
+        transition: fill 0.3s ease;
+    }
+
+    &__name {
+        display: none;
+        margin-left: 10px;
+        @include GilroyBoldFont;
+        font-size: 9px;
+        line-height: 1.56;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &--full {
+        .social-btn__link,
+        .social-btn__name {
+            display: block;
+        }
+
+        .social-btn__del {
+            display: flex;
+        }
+    }
+}

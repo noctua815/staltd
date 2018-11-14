@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', { "login": true })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Личный кабинет</a></li>
+                                <li>Список заявок</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Список заявок</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Информация о заказе -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="orders-filter">
+                            <div class="orders-filter__left">
+                                <ul class="filters small-caps">
+                                    <li class="active js-filter" data-filter="last">Последние</li>
+                                </ul>
+                            </div>
+                            <div class="orders-filter__right">
+                                <ul class="filters small-caps">
+                                    <li class="js-filter" data-filter="new">Новые</li>
+                                    <li class="js-filter" data-filter="sent">Отправленные</li>
+                                    <li class="js-filter" data-filter="processing">Принятые в обработку</li>
+                                    <li class="js-filter" data-filter="completion">Комплектуются</li>
+                                    <li class="js-filter" data-filter="ready-shipment">Готовые к отгрузке</li>
+                                    <li class="js-filter" data-filter="shipped">Товар отгружен</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="orders-list">
+                            <div class="section-grid">
+                                <div class="grid">
+                                    <div class="grid__wr js-filter-grid">
+                                        <div class="order js-filter-item" data-category="last processing">
+                                            <a href="/order-in-work.html" class="order__link"></a>
+                                            <div class="order__wr">
+                                                <div class="order__number-col">
+                                                    <div class="order__number">№13214</div>
+                                                </div>
+                                                <div class="order__name-col">
+                                                    <div class="order__name">Название модификации товара 1 с характеристиками, Название модификации товара 2 с характеристиками и еще 10 товаров в заявке</div>
+                                                </div>
+                                                <div class="order__price-col">
+                                                    <div class="data-text">14 860 ₽</div>
+                                                </div>
+                                                <div class="order__thumb-col">
+                                                    <div class="order__thumb">
+                                                        <div class="order__thumb-wr">
+                                                            <img class="order__thumb-img"         src="/pic/order/user.png" srcset="/pic/order/user@2x.png 2x">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__status-col">
+                                                    <div class="order__status">Принята в обработку</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order order--alert js-filter-item" data-category="last sent">
+                                            <a href="/order.html" class="order__link"></a>
+                                            <div class="order__wr">
+                                                <div class="order__number-col">
+                                                    <div class="order__number">№13214</div>
+                                                </div>
+                                                <div class="order__name-col">
+                                                    <div class="order__name">Название модификации товара 1 с характеристиками, Название модификации товара 2 с характеристиками и еще 10 товаров в заявке</div>
+                                                </div>
+                                                <div class="order__price-col">
+                                                    <div class="data-text">от 24 000 ₽</div>
+                                                </div>
+                                                <div class="order__thumb-col">
+                                                    <div class="order__thumb">
+                                                        <div class="order__thumb-wr">
+                                                            <img class="order__thumb-img"         src="/pic/order/user.png" srcset="/pic/order/user@2x.png 2x">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__status-col">
+                                                    <div class="order__status">Отправленная</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order js-filter-item" data-category="last shipped">
+                                            <a href="/order.html" class="order__link"></a>
+                                            <div class="order__wr">
+                                                <div class="order__number-col">
+                                                    <div class="order__number">№13214</div>
+                                                </div>
+                                                <div class="order__name-col">
+                                                    <div class="order__name">Название модификации товара 1 с характеристиками, Название модификации товара 2 с характеристиками и еще 10 товаров в заявке</div>
+                                                </div>
+                                                <div class="order__price-col">
+                                                    <div class="data-text">14 860 ₽</div>
+                                                </div>
+                                                <div class="order__thumb-col">
+                                                    <div class="order__thumb">
+                                                        <div class="order__thumb-wr">
+                                                            <img class="order__thumb-img"         src="/pic/order/user.png" srcset="/pic/order/user@2x.png 2x">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__status-col">
+                                                    <div class="order__status">Товар отгружен</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order js-filter-item" data-category="last processing">
+                                            <a href="/order-in-work.html" class="order__link"></a>
+                                            <div class="order__wr">
+                                                <div class="order__number-col">
+                                                    <div class="order__number">№13214</div>
+                                                </div>
+                                                <div class="order__name-col">
+                                                    <div class="order__name">Название модификации товара 1 с характеристиками, Название модификации товара 2 с характеристиками и еще 10 товаров в заявке</div>
+                                                </div>
+                                                <div class="order__price-col">
+                                                    <div class="data-text">14 860 ₽</div>
+                                                </div>
+                                                <div class="order__thumb-col">
+                                                    <div class="order__thumb">
+                                                        <div class="order__thumb-wr">
+                                                            <img class="order__thumb-img"         src="/pic/order/user.png" srcset="/pic/order/user@2x.png 2x">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__status-col">
+                                                    <div class="order__status">Принята в обработку</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order order--alert js-filter-item" data-category="last sent">
+                                            <a href="/order.html" class="order__link"></a>
+                                            <div class="order__wr">
+                                                <div class="order__number-col">
+                                                    <div class="order__number">№13214</div>
+                                                </div>
+                                                <div class="order__name-col">
+                                                    <div class="order__name">Название модификации товара 1 с характеристиками, Название модификации товара 2 с характеристиками и еще 10 товаров в заявке</div>
+                                                </div>
+                                                <div class="order__price-col">
+                                                    <div class="data-text">от 24 000 ₽</div>
+                                                </div>
+                                                <div class="order__thumb-col">
+                                                    <div class="order__thumb">
+                                                        <div class="order__thumb-wr">
+                                                            <img class="order__thumb-img"         src="/pic/order/user.png" srcset="/pic/order/user@2x.png 2x">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__status-col">
+                                                    <div class="order__status">Отправленная</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order js-filter-item" data-category="last shipped">
+                                            <a href="/order.html" class="order__link"></a>
+                                            <div class="order__wr">
+                                                <div class="order__number-col">
+                                                    <div class="order__number">№13214</div>
+                                                </div>
+                                                <div class="order__name-col">
+                                                    <div class="order__name">Название модификации товара 1 с характеристиками, Название модификации товара 2 с характеристиками и еще 10 товаров в заявке</div>
+                                                </div>
+                                                <div class="order__price-col">
+                                                    <div class="data-text">14 860 ₽</div>
+                                                </div>
+                                                <div class="order__thumb-col">
+                                                    <div class="order__thumb">
+                                                        <div class="order__thumb-wr">
+                                                            <img class="order__thumb-img"         src="/pic/order/user.png" srcset="/pic/order/user@2x.png 2x">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__status-col">
+                                                    <div class="order__status">Товар отгружен</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                        <div class="order-grid-sizer js-grid-sizer"></div>
+
+                                        <div class="filter-message small-caps js-filter-message">По заданным фильтрам ничего не найдено</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Информация о заказе -->
+            </main>
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

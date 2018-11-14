@@ -1,0 +1,514 @@
+/*
+ * Banners
+ */
+.banner {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &__wr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        width: 90%;
+        @include LisaFont;
+    }
+
+    &__subtext {
+        width: 90%;
+        margin-top: 10px;
+        @include GilroyBoldFont;
+        font-size: 9px;
+        line-height: 1.56;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &--big {
+        width: calc(100% - 20px);
+        @media (max-width: $bigPhone) {
+            min-height: 200px;
+        }
+
+        &:after {
+            content: '';
+            padding-top: calc(300 / 1180 * 100%);
+            float: left;
+            @media (max-width: $tablet) {
+                padding-top: calc(300 / 920 * 100%);
+            }
+        }
+
+        .banner__title {
+            font-size: 32px;
+            line-height: 1.25;
+            letter-spacing: 4px;
+            margin-top: 22px;
+            @media (max-width: $bigPhone) {
+                font-size: 20px;
+                line-height: 1.2;
+                letter-spacing: 2.4px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &--small {
+        width: calc(50% - 20px);
+        min-height: 180px;
+        @media (max-width: $tablet) {
+            width: calc(100% / 3 - 20px);
+        }
+        @media (max-width: $smTablet) {
+            width: calc(50% - 20px);
+        }
+        @media (max-width: $bigPhone) {
+            width: calc(100% - 20px);
+            min-height: 120px;
+        }
+
+        .banner__title {
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 2.5px;
+            margin-top: 28px;
+            @media (max-width: $bigPhone) {
+                margin-top: 14px;
+            }
+        }
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+/*
+ * Teasers
+ */
+.category-teaser {
+    position: relative;
+    width: calc(50% - 20px);
+    min-height: 140px;
+    margin: 10px;
+    @media (max-width: $tablet) {
+        width: calc(100% / 3 - 20px);
+        min-height: 180px;
+        overflow: hidden;
+    }
+    @media (max-width: $smTablet) {
+        width: calc(50% - 20px);
+    }
+    @media (max-width: $bigPhone) {
+        width: calc(100% - 20px);
+        min-height: 120px;
+    }
+
+    &:hover {
+        .category-teaser__bg {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+            @media (max-width: $tablet) {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__wr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        z-index: 1;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: calc(120 / 140 * 100%);
+        background-color: $soft-blue;
+        transition: box-shadow 0.3s ease;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 215px;
+        height: 130px;
+        mix-blend-mode: multiply;
+        @media (max-width: $tablet) {
+            right: -107px;
+        }
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__title {
+        position: relative;
+        margin-top: 20px;
+        @include LisaFont;
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        color: $white;
+        @media (max-width: $bigPhone) {
+            text-align: left;
+        }
+        @media (max-width: $phone) {
+            font-size: 24px;
+        }
+    }
+
+    &--full {
+        width: calc(100% - 20px);
+    }
+
+    &--dark {
+        .category-teaser__bg {
+            background-color: $cool-blue;
+        }
+    }
+}
+
+.teaser {
+    position: relative;
+    display: flex;
+    width: calc(25% - 20px);
+    min-width: 200px;
+    margin: 10px;
+    border: 1px solid $black;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    @media (min-width: $bigDesktop) {
+        width: calc(50% / 3 - 20px);
+    }
+    @media (max-width: $tablet) {
+        width: calc(100% / 3 - 20px);
+    }
+    @media (max-width: $smTablet) {
+        width: calc(50% - 20px);
+    }
+    @media (max-width: $phone) {
+        width: calc(100% - 20px);
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &__wr {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 16px 19px 8px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+    }
+
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-height: 228px;
+        border-bottom: 1px solid $black;
+        background-color: $white;
+
+        &:after {
+            content: '';
+            padding-top: calc(228 / 278 * 100%);
+            float: left;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__icon {
+        position: relative;
+        width: 100px;
+        height: 60px;
+        margin-top: 24px;
+
+        & + .teaser__subtitle,
+        & + .teaser__title {
+            margin-top: 24px;
+        }
+
+        img,
+        svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left bottom;
+        }
+    }
+
+    &__info {
+        flex: 1;
+    }
+
+    &__descr {
+        min-height: 42px;
+        margin-top: 16px;
+
+        ul {
+            li {
+                line-height: 14px;
+            }
+
+            li + li {
+                margin-top: 10px;
+            }
+        }
+
+        a {
+            display: inline-block;
+            color: $white;
+            line-height: 14px;
+        }
+    }
+
+    &__category-link {
+        color: $white;
+        transition: none;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__price {
+        margin-top: 16px;
+    }
+
+    &__subtitle {
+        margin-bottom: 2px;
+    }
+
+    &--vertical {
+        min-height: 380px;
+    }
+
+    &--small {
+        min-height: 180px;
+        @media (min-width: $bigDesktop) {
+            width: calc(50% / 3 - 20px);
+        }
+        @media (max-width: $tablet) {
+            width: calc(100% / 3 - 20px);
+        }
+        @media (max-width: $smTablet) {
+            width: calc(50% - 20px);
+        }
+        @media (max-width: $phone) {
+            width: calc(100% - 20px);
+        }
+
+        .teaser__content {
+            justify-content: flex-end;
+            padding-bottom: 13px;
+        }
+    }
+
+    &--white {
+        color: white;
+    }
+
+    &--black {
+        color: $black;
+
+        .item-title,
+        .teaser__descr,
+        .teaser__price {
+            transition: color 0.3s ease;
+        }
+
+        .teaser__thumb {
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover {
+            opacity: 1;
+            color: $cool-blue;
+
+            .teaser__thumb {
+                opacity: 0.9;
+            }
+
+            .item-title {
+                color: $cool-blue;
+            }
+        }
+    }
+
+    &--monochrome {
+        color: white;
+        background-color: $cool-blue;
+
+        .teaser__content {
+            padding-bottom: 13px;
+        }
+    }
+
+    &--blur {
+        color: white;
+
+        .teaser__content {
+            padding-bottom: 13px;
+        }
+
+        .teaser__img {
+            filter: blur(2.9px);
+            transform: scale(1.03);
+            transform-origin: center;
+        }
+    }
+}
+
+.grid-sizer {
+    position: absolute;
+    width: calc(25% - 20px);
+    margin: 10px;
+    @media (min-width: $bigDesktop) {
+        width: calc(50% / 3 - 20px);
+    }
+    @media (max-width: $tablet) {
+        width: calc(100% / 3 - 20px);
+    }
+    @media (max-width: $smTablet) {
+        width: calc(50% - 20px);
+    }
+    @media (max-width: $bigPhone) {
+        width: calc(50% - 20px);
+    }
+    @media (max-width: $phone) {
+        width: calc(100% - 20px);
+    }
+}
+
+.article-grid-sizer {
+    position: absolute;
+    width: calc(25% - 20px);
+    margin: 10px;
+    @media (min-width: $bigDesktop) {
+        width: calc(20% - 20px);
+    }
+    @media (max-width: $tablet) {
+        width: calc(100% / 3 - 20px);
+    }
+    @media (max-width: $bigPhone) {
+        width: calc(50% - 20px);
+    }
+    @media (max-width: $phone) {
+        width: calc(100% - 20px);
+    }
+}
+
+.object-grid-sizer {
+    position: absolute;
+    width: calc((100% / 3) - 20px);
+    margin: 10px;
+}
+
+.order-grid-sizer {
+    position: absolute;
+    width: 100%;
+    margin: 10px;
+}

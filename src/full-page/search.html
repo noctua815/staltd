@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html')
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li>Результаты поиска</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Результаты поиска по запросу «проф»</h1>
+                            </div>
+                        </div>
+                        <div class="page-header__filters">
+                            <ul class="filters small-caps">
+                                <li class="active js-search-filter" data-filter="all">Популярное</li>
+                                <li class="js-search-filter" data-filter="products">Товары</li>
+                                <li class="js-search-filter" data-filter="category">Категории</li>
+                                <li class="js-search-filter" data-filter="services">Услуги</li>
+                                <li class="js-search-filter" data-filter="objects">Объекты в портфолио</li>
+                                <li class="js-search-filter" data-filter="help">Справочные материалы и статьи</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товары -->
+                <div class="section js-search-section" data-filter="products">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <h2>Товары</h2>
+                            <div class="section-header__counter">
+                                <div class="comment-header">
+                                    124
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <!-- Main grid items -->
+                                <div class="grid__wr grid--hidden js-grid">
+                                    <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                    <div class="grid-sizer js-grid-sizer"></div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/product.html" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Профлист С8</div>
+                                                    </div>
+                                                    <div class="teaser__descr">
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">120</div>
+                                                            <div class="params-item__text">цветов, оттенков и паттернов</div>
+                                                        </div>
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">14</div>
+                                                            <div class="params-item__text">вариантов покрытий</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 300 ₽⁄м</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/product.html" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Профлист С8</div>
+                                                    </div>
+                                                    <div class="teaser__descr">
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">120</div>
+                                                            <div class="params-item__text">цветов, оттенков и паттернов</div>
+                                                        </div>
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">14</div>
+                                                            <div class="params-item__text">вариантов покрытий</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 300 ₽⁄м</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <div class="discount-angle">
+                                                <div class="discount-angle__value">-23%</div>
+                                            </div>
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/product-item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Маленькие саморезы для профлиста С10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 150 ₽⁄шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/product-item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Маленькие саморезы для профлиста С10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 150 ₽⁄шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Main grid items -->
+                            </div>
+                        </div>
+
+                        <div class="section-link">
+                            <a href="/objects.html" class="btn btn--big">
+                                <span class="btn__text">Все найденные товары</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Товары -->
+
+                <!-- Категории -->
+                <div class="section js-search-section" data-filter="category">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <h2>Категории</h2>
+                            <div class="section-header__counter">
+                                <div class="comment-header">
+                                    5
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <!-- Main grid items -->
+                                <div class="grid__wr grid--hidden js-grid">
+                                    <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                    <div class="grid-sizer js-grid-sizer"></div>
+
+                                    <div class="teaser teaser--small teaser--blur teaser--white js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__bg">
+                                                <img class="teaser__img" src="/pic/items/item-2.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__icon">
+                                                    <img src="/pic/items/category-icon-2.svg" alt="Металлопрокат">
+                                                </div>
+                                                <div class="teaser__title">
+                                                    <div class="small-caps">Металлопрокат</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--small teaser--blur teaser--white js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__bg">
+                                                <img class="teaser__img" src="/pic/items/item-2.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__icon">
+                                                    <img src="/pic/items/category-icon-3.svg" alt="Сэндвич-панели">
+                                                </div>
+                                                <div class="teaser__title">
+                                                    <div class="small-caps">Сэндвич-панели</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--small teaser--blur teaser--white js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__bg">
+                                                <img class="teaser__img" src="/pic/items/item-2.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__icon">
+                                                    <img src="/pic/items/category-icon-10.svg" alt="Теплоизоляция">
+                                                </div>
+                                                <div class="teaser__title">
+                                                    <div class="small-caps">Теплоизоляция</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Main grid items -->
+                            </div>
+                        </div>
+
+                        <div class="section-link">
+                            <a href="/objects.html" class="btn btn--big">
+                                <span class="btn__text">Все найденные категории</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Категории -->
+
+                <!-- Услуги -->
+                <div class="section js-search-section" data-filter="services">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <h2>Услуги</h2>
+                            <div class="section-header__counter">
+                                <div class="comment-header">
+                                    5
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <!-- Main grid items -->
+                                <div class="grid__wr grid--hidden js-grid">
+                                    <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                    <div class="grid-sizer js-grid-sizer"></div>
+
+                                    <div class="category-teaser js-grid-item">
+                                        <div class="category-teaser__wr">
+                                            <a href="/" class="category-teaser__link"></a>
+                                            <div class="category-teaser__bg"></div>
+                                            <div class="category-teaser__icon">
+                                                <img class="category-teaser__img" src="/pic/catalog/catalog-item-1.png" alt="Монтаж заборов">
+                                            </div>
+                                            <div class="category-teaser__title">Монтаж заборов</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-teaser js-grid-item">
+                                        <div class="category-teaser__wr">
+                                            <a href="/" class="category-teaser__link"></a>
+                                            <div class="category-teaser__bg"></div>
+                                            <div class="category-teaser__icon">
+                                                <img class="category-teaser__img" src="/pic/catalog/catalog-item-1.png" alt="ОКРАСКА МЕТАЛЛА">
+                                            </div>
+                                            <div class="category-teaser__title">ОКРАСКА МЕТАЛЛА</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Main grid items -->
+                            </div>
+                        </div>
+
+                        <div class="section-link">
+                            <a href="/objects.html" class="btn btn--big">
+                                <span class="btn__text">Все найденные услуги</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Услуги -->
+
+                <!-- Объекты -->
+                <div class="section js-search-section" data-filter="objects">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <div class="section-header">
+                                <h2>Объекты в портфолио</h2>
+                                <div class="section-header__counter">
+                                    <div class="comment-header">
+                                        5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <div class="grid__wr">
+                                    <div class="object-item">
+                                        <div class="object-item__wr">
+                                            <div class="object-item__date">март 2017</div>
+                                            <a class="object-item__link" href="/"></a>
+                                            <div class="object-item__thumb">
+                                                <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                            </div>
+                                            <div class="object-item__content">
+                                                <div class="object-item__title">
+                                                    <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                </div>
+                                                <div class="object-item__descr">
+                                                    <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="object-item">
+                                        <div class="object-item__wr">
+                                            <div class="object-item__date">март 2017</div>
+                                            <a class="object-item__link" href="/"></a>
+                                            <div class="object-item__thumb">
+                                                <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                            </div>
+                                            <div class="object-item__content">
+                                                <div class="object-item__title">
+                                                    <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                </div>
+                                                <div class="object-item__descr">
+                                                    <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="object-item">
+                                        <div class="object-item__wr">
+                                            <div class="object-item__date">март 2017</div>
+                                            <a class="object-item__link" href="/"></a>
+                                            <div class="object-item__thumb">
+                                                <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                            </div>
+                                            <div class="object-item__content">
+                                                <div class="object-item__title">
+                                                    <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                </div>
+                                                <div class="object-item__descr">
+                                                    <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-link">
+                            <a href="/objects.html" class="btn btn--big">
+                                <span class="btn__text">Все найденные объекты в портфолио</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Объекты -->
+
+                <!-- Справка -->
+                <div class="section js-search-section" data-filter="help">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <div class="section-header">
+                                <h2>Справочные материалы и статьи</h2>
+                                <div class="section-header__counter">
+                                    <div class="comment-header">
+                                        11
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <div class="grid__wr">
+                                    <div class="article-item">
+                                        <a href="/" class="article-item__link"></a>
+                                        <div class="article-item__wr">
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Инструкция по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item">
+                                        <div class="article-item__wr">
+                                            <a href="/" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Сертификат на покрытия из полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item">
+                                        <div class="article-item__wr">
+                                            <a href="/" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Видеообзор покрытий профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item">
+                                        <div class="article-item__wr">
+                                            <a href="/" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Сертификат на покрытия из полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-link">
+                            <a href="/objects.html" class="btn btn--big">
+                                <span class="btn__text">Все найденные справочные материалы и статьи</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENd Справка -->
+
+            </main>
+            <!-- END Main section -->
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="32px" viewBox="0 0 37 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>C13AE638-9A42-4463-9285-79AE43798FEF</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 32 0 37 16 32 32 0 32"></polygon>
+    </defs>
+    <g id="Blocks-/-Global-/-First-Line-/-Authorized" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-322.000000, -34.000000)">
+        <g id="First-Line-">
+            <g id="Ask-Question" transform="translate(322.000000, 34.000000)">
+                <g id="Icons-/-Question-/-Normal">
+                    <g id="Rectangle">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#1A1A1A" stroke-width="2" d="M1,1 L1,31 L31.2648091,31 L35.9523091,16 L31.2648091,1 L1,1 Z"></path>
+                    </g>
+                    <path d="M15.533,17.77 L18.017,17.77 C18.017,16.186 21.041,15.394 21.041,12.694 C21.041,10.372 19.043,9.148 17.009,9.148 C15.101,9.148 13.391,10.12 12.653,11.938 L14.777,13.162 C15.155,12.19 15.857,11.56 16.919,11.56 C17.963,11.56 18.557,12.046 18.557,12.874 C18.557,14.656 15.533,15.394 15.533,17.77 Z M16.775,22.234 C17.621,22.234 18.305,21.55 18.305,20.704 C18.305,19.858 17.621,19.174 16.775,19.174 C15.929,19.174 15.245,19.858 15.245,20.704 C15.245,21.55 15.929,22.234 16.775,22.234 Z" id="?" fill="#1A1A1A" fill-rule="evenodd"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

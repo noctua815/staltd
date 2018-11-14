@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html')
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Услуги</a></li>
+                                <li>Фасадные работы</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Фасадные работы</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Описание услуги -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="section-content text-content col-8">
+                            <div class="section-content-row">
+                                <h3>Заголовок второго уровня</h3>
+                                <p>Необходимы точные размеры периметра забора. На плане укажите расположение въездных ворот и калитки, где будут установлены опоры. Расстояние между опорными столбами должен быть не больше трёх метров. В зависимости от желаемой высоты забора, калитки и ворот будет рассчитана длина профлиста и его нужное количество.</p>
+                            </div>
+
+                            <div class="images">
+                                <div class="img-wr img-wr--small">
+                                    <img src="/pic/images/image-4.png" alt="Img">
+                                </div>
+
+                                <div class="img-wr img-wr--small">
+                                    <img src="/pic/images/image-5.png" alt="Img">
+                                </div>
+                            </div>
+
+                            <div class="section-content-row">
+                                <h3>Еще раз заголовок второго уровня</h3>
+                                <p>Установка опорных столбов. Обычно это трубы из металла диаметром от 76мм, или квадратного сечения от 60Х60 мм. Внешнее отверстие столба нужно заварить, чтобы не попадала влага. Под столбы роется яма ручным буром до 1,5 м глубиной
+                                    и 150 мм шириной. Длина столба в земле должна составлять ⅓ высоты забора.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-section" data-service="service-1">
+                        <div class="wrapper">
+                            <div class="service-section-title">
+                                <div class="page-header-secondary">ЗАявка на выполнение ФАСАДНЫХ работ</div>
+                            </div>
+
+                            <div class="service-section-body">
+                                <form class="form service-section-form" id="service-form" action="">
+                                    <div class="row form-row">
+                                        <div class="col col-2--fix">
+                                            <div class="form-field">
+                                                <label for="quadrature">Квадратура фасада</label>
+                                                <input type="text" name="quadrature" value="" id="quadrature" class="js-field">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-row">
+                                        <div class="col col-5--fix">
+                                            <div class="form-field">
+                                                <label for="address">Адрес объекта</label>
+                                                <input type="text" name="address" value="" id="address" class="js-field">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="service-types">
+                                        <div class="service-types__title">
+                                            <div class="small-caps">ТИП ОБЛИЦОВКИ</div>
+                                        </div>
+
+                                        <div class="service-types__info">
+                                            Здесь нужен короткий текст о том какой лучше выбрать тип облицовки
+                                        </div>
+
+                                        <div class="service-types__types">
+                                            <div class="radio-btns-list">
+                                                <div class="radio-btns-list__item">
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="type-1" name="service-type" value="type-1" checked>
+                                                        <label class="radio-btn__label" for="type-1">Профнастил</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="radio-btns-list__item">
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="type-2" name="service-type" value="type-2">
+                                                        <label class="radio-btn__label" for="type-2">Металлосайдинг</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="radio-btns-list__item">
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="type-3" name="service-type" value="type-3">
+                                                        <label class="radio-btn__label" for="type-3">Керамогранит</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="radio-btns-list__item">
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="type-4" name="service-type" value="type-4">
+                                                        <label class="radio-btn__label" for="type-4">Линеарные панели</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="radio-btns-list__item">
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="type-5" name="service-type" value="type-5">
+                                                        <label class="radio-btn__label" for="type-5">Фасадные кассеты</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="service-section-add">
+                            <div class="order-item-list">
+
+                                <div class="order-item order-item--btn js-oi" data-type="service" data-params="{'id':'2', 'service':'service-2'}">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__btn-col">
+                                            <div class="order-btn js-order-btn" data-type="add">
+                                                <div class="order-btn__status">Добавить в заявку</div>
+                                                <div class="order-btn__actions">
+                                                    <div class="order-btn__btn order-btn__undo"></div>
+                                                    <div class="order-btn__action">
+                                                        <a href="/order.html" class="order-btn__link"></a>
+                                                    </div>
+                                                    <div class="order-btn__btn order-btn__add"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Рекомендованные товары -->
+                        <div class="order-section hidden" id="recom-product-section">
+                            <div class="order-section__block">
+                                <div class="order-section__title">
+                                    <div class="wrapper">
+                                        <div class="section-header">РЕКОМЕНДУЕМЫЕ ТОВАРЫ</div>
+                                    </div>
+                                </div>
+
+                                <div class="order-section__body js-toggle-hide" data-hide-block="recom-block">
+                                    <div class="order-item-list" id="recom-product-list">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- END Рекомендованные товары -->
+                    </div>
+                </div>
+                <!-- END Описание услуги -->
+            </main>
+
+            @@include('loginModals.html')
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

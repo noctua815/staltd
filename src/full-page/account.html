@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', {
+                "login": true
+            })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li>Личный кабинет</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Личный кабинет</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Личный кабинет -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="account">
+                            <div class="account__main">
+                                <div class="account__orders account__block">
+                                    <div class="account__block-wr">
+                                        <a href="/orders.html" class="account__block-link"></a>
+                                        <div class="account__orders-list">
+                                            <div class="account__order">
+                                                <div class="account__order-value">17</div>
+                                                <div class="account__order-title">заявок выполнено</div>
+                                            </div>
+                                            <div class="account__order">
+                                                <div class="account__order-value">5</div>
+                                                <div class="account__order-title">заявок в обработке</div>
+                                            </div>
+                                            <div class="account__order">
+                                                <div class="account__order-value">3</div>
+                                                <div class="account__order-title">новые заявки</div>
+                                            </div>
+                                        </div>
+                                        <div class="account__block-title small-caps">Список заявок</div>
+                                    </div>
+                                </div>
+                                <div class="account__person account__block">
+                                    <div class="account__block-wr">
+                                        <a href="/personal-info.html" class="account__block-link"></a>
+                                        <div class="account__person-name">Константин</div>
+                                        <div class="account__block-title small-caps">Персональная информация</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="account__logout">
+                                <a href="/logout" class="btn btn--full">
+                                    <div class="btn__text">Выйти из личного кабинета</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Личный кабинет -->
+            </main>
+
+            @@include('footer.html')
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', { "login": true })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Личный кабинет</a></li>
+                                <li>Персональная информация</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Персональная информация</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Персональная информация -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="personal-info">
+                            <form class="form personal-info__form" id="personal-info" action="">
+
+                                <!-- Контактные данные -->
+                                <div class="personal-info__section">
+                                    <div class="personal-info__section-title">
+                                        <h2 class="section-header">Мои контактные данные</h2>
+                                    </div>
+                                    <div class="personal-info__section-content">
+                                        <div class="row form-row">
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="surname">Фамилия</label>
+                                                    <input type="text" name="surname" value="Константинопольский" id="surname" class="js-field" data-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="name">Имя</label>
+                                                    <input type="text" class="js-field" name="name" id="name" value="Константин">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="patronymic">Отчество</label>
+                                                    <input type="text" class="js-field" name="patronymic" id="patronymic" value="Константинович">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-3">
+                                                <div class="form-field">
+                                                    <label for="email">Электронная почта</label>
+                                                    <input type="text" name="email" value="clientmailbox@yandex.ru" id="email" class="js-field" data-required="true" data-type="email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="phone">Контактный телефон</label>
+                                                    <input type="text" name="phone" value="+7 (123) 456-78-90" id="phone"
+                                                    class="js-field" data-required="true" data-type="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-3">
+                                                <div class="form-field form-field--flex">
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="legal-person" name="person-type" value="legal" checked>
+                                                        <label class="radio-btn__label" for="legal-person">Юридическое лицо</label>
+                                                    </div>
+
+                                                    <div class="radio-btn">
+                                                        <input class="radio-btn__input js-field" type="radio" id="physical-person" name="person-type" value="physical">
+                                                        <label class="radio-btn__label" for="physical-person">Частный клиент</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Контактные данные -->
+
+                                <!-- Социальные сети -->
+                                <div class="personal-info__section personal-info__section--social">
+                                    <div class="personal-info__section-title">
+                                        <h2 class="section-header">Социальные сети</h2>
+                                    </div>
+                                    <div class="personal-info__section-content">
+                                        <div class="social-btns">
+                                            <!-- Facebook -->
+                                            <div class="social-btn">
+                                                <input type="hidden" name="facebook-name" value="" class="js-field">
+                                                <input type="hidden" name="facebook-link" value="" class="js-field">
+                                                <div class="social-btn__main">
+                                                    <a href="/" class="social-btn__link" target="_blank"></a>
+                                                    <div class="social-btn__icon">
+                                                        <svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                                            <path fill-rule="evenodd" d="M0 13.948V8.987h4V6.494c0-1.801.589-3.334 1.766-4.598C6.944.632 8.364 0 10.026 0H14v4.961h-3.974c-.26 0-.494.147-.701.442-.208.294-.312.649-.312 1.065v2.545H14v4.961H9.013V26H4.026V13.974h-4L0 13.948z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="social-btn__name"></div>
+                                                </div>
+                                                <div class="social-btn__del">
+                                                    <svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                        <path d="M4.243 5.657L0 1.414 1.414 0l4.243 4.243L9.899 0l1.415 1.414L7.07 5.657l4.243 4.242-1.415 1.415L5.657 7.07l-4.243 4.243L0 9.899z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <!-- END Facebook -->
+
+                                            <!-- VK -->
+                                            <div class="social-btn social-btn--full">
+                                                <input type="hidden" name="vk-name" value="" class="js-field">
+                                                <input type="hidden" name="vk-link" value="" class="js-field">
+                                                <div class="social-btn__main">
+                                                    <a href="/" class="social-btn__link" target="_blank"></a>
+                                                    <div class="social-btn__icon">
+                                                        <svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="20" viewBox="0 0 35 20">
+                                                            <path d="M0 1.257C.19 1.105.427.99.712.914.978.838 1.215.8 1.424.8h.256c.19 0 .418.01.684.029.417.019.721.028.911.028.114 0 .475-.019 1.082-.057.304-.019.58-.029.826-.029.247 0 .465.01.655.029.38.038.684.114.911.229.114.057.238.18.37.371.134.19.247.371.342.543.095.171.21.419.342.743.133.324.228.533.285.628a31.499 31.499 0 0 0 2.677 4.657l.2.315a4 4 0 0 0 .256.371c.075.095.16.21.256.343.095.133.2.238.313.314.114.076.218.162.313.257a.588.588 0 0 0 .342.172c.133.019.247.019.342 0 .531-.095.826-1.21.883-3.343.019-.362.028-.695.028-1 0-1.41-.142-2.38-.427-2.914a1.486 1.486 0 0 0-.456-.515 2.759 2.759 0 0 0-.712-.342c-.284-.096-.503-.2-.655-.315.266-.533.74-.885 1.424-1.057C13.556.086 14.477 0 15.635 0h1.509l.74.029.77.085.626.172.57.257.37.4c.17.343.275.743.313 1.2 0 .133.01.267.028.4 0 .38-.028.876-.085 1.486-.076.8-.114 1.295-.114 1.485a10.184 10.184 0 0 0-.028 2.4c.076.838.36 1.42.854 1.743.17-.019.332-.057.484-.114a1.31 1.31 0 0 0 .456-.314c.152-.153.256-.267.313-.343A65.019 65.019 0 0 1 23.124 8c.893-1.181 1.785-2.733 2.677-4.657l.257-.657.342-.772.341-.571.456-.4c.304-.133.664-.2 1.082-.2h.256c.38 0 .817.019 1.31.057a23.82 23.82 0 0 0 1.339.057c.17 0 .437-.01.797-.028.361-.02.674-.039.94-.058.266-.019.55-.01.854.029.304.038.551.095.74.171.19.077.324.2.4.372a.821.821 0 0 1 .085.371c0 .553-.332 1.381-.997 2.486a16.058 16.058 0 0 1-.996 1.514 47.84 47.84 0 0 1-1.31 1.657c-.532.648-.883 1.096-1.054 1.343-.038.038-.171.21-.399.515l-.513.685a2.942 2.942 0 0 0-.341.657c-.114.286-.162.543-.143.772 0 .152.029.295.086.428.057.134.152.277.285.429.132.152.227.267.284.343.057.076.19.2.4.371.208.172.322.276.34.315 1.349 1.238 2.412 2.352 3.19 3.342.76.99 1.14 1.705 1.14 2.143 0 .629-.485 1.02-1.453 1.172a9.88 9.88 0 0 1-1.51.114 9.03 9.03 0 0 1-1.224-.086c-.38-.038-.73-.057-1.054-.057-.493 0-.92.048-1.281.143h-.17c-1.254-.21-2.573-1.105-3.96-2.686a8.055 8.055 0 0 1-.484-.6 7.713 7.713 0 0 0-.626-.743 3.088 3.088 0 0 0-.655-.485c-.266-.153-.522-.21-.769-.172-.437.076-.73.353-.883.829-.152.476-.237 1.047-.256 1.714-.02.667-.114 1.133-.285 1.4-.247.457-.997.686-2.25.686a18.22 18.22 0 0 1-1.88-.114c-1.48-.153-2.828-.534-4.043-1.143-1.215-.61-2.174-1.257-2.877-1.943-.702-.686-1.47-1.572-2.306-2.657-1.975-2.534-3.845-5.6-5.61-9.2a37.297 37.297 0 0 1-.314-.657A20.655 20.655 0 0 1 .455 2.8 3.686 3.686 0 0 1 .229 2a9.578 9.578 0 0 1-.086-.771L0 1.257z"/>
+                                                        </svg>
+
+                                                    </div>
+                                                    <div class="social-btn__name">Константин Константинопольский</div>
+                                                </div>
+                                                <div class="social-btn__del">
+                                                    <svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                        <path d="M4.243 5.657L0 1.414 1.414 0l4.243 4.243L9.899 0l1.415 1.414L7.07 5.657l4.243 4.242-1.415 1.415L5.657 7.07l-4.243 4.243L0 9.899z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <!-- END VK -->
+
+                                            <!-- Twitter -->
+                                            <div class="social-btn">
+                                                <input type="hidden" name="tw-name" value="" class="js-field">
+                                                <input type="hidden" name="tw-link" value="" class="js-field">
+                                                <div class="social-btn__main">
+                                                    <a href="/" class="social-btn__link" target="_blank"></a>
+                                                    <div class="social-btn__icon">
+                                                        <svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21">
+                                                            <path d="M.063 18.61c.422.043.844.064 1.267.064 2.476 0 4.685-.755 6.626-2.264a5.154 5.154 0 0 1-3.102-1.048c-.915-.684-1.54-1.558-1.878-2.62.281.056.612.084.992.084.492 0 .963-.063 1.413-.188-1.238-.238-2.265-.846-3.08-1.824A5.115 5.115 0 0 1 1.075 7.44v-.063a5.04 5.04 0 0 0 2.427.65A5.268 5.268 0 0 1 1.752 6.14a5.124 5.124 0 0 1-.655-2.536A5.1 5.1 0 0 1 1.836.943a14.871 14.871 0 0 0 4.854 3.92 15.03 15.03 0 0 0 6.141 1.634 5.913 5.913 0 0 1-.148-1.216c0-1.453.521-2.696 1.562-3.73C15.286.517 16.545 0 18.023 0c1.533 0 2.828.559 3.883 1.677a10.724 10.724 0 0 0 3.376-1.3c-.393 1.272-1.167 2.25-2.321 2.934A10.96 10.96 0 0 0 26 2.473c-.675 1.048-1.555 1.963-2.638 2.746v.691c0 1.411-.211 2.83-.633 4.255a15.285 15.285 0 0 1-1.9 4.066 16.26 16.26 0 0 1-3.06 3.458c-1.195 1.02-2.616 1.823-4.263 2.41-1.646.587-3.425.887-5.339.901-2.94 0-5.663-.79-8.167-2.368l.063-.021z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="social-btn__name"></div>
+                                                </div>
+                                                <div class="social-btn__del">
+                                                    <svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                        <path d="M4.243 5.657L0 1.414 1.414 0l4.243 4.243L9.899 0l1.415 1.414L7.07 5.657l4.243 4.242-1.415 1.415L5.657 7.07l-4.243 4.243L0 9.899z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <!-- END Twitter -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Социальные сети -->
+
+                                <!-- Контрагент и договора -->
+                                <div class="personal-info__section js-legal-info-section">
+                                    <div class="personal-info__section-title">
+                                        <h2 class="section-header">Контрагент и договора</h2>
+                                    </div>
+                                    <div class="personal-info__section-content">
+                                        <div class="row form-row">
+                                            <div class="col col-5">
+                                                <div class="form-field">
+                                                    <label for="legal-name">Юридическое название компании</label>
+                                                    <input type="text" name="legal-name" id="legal-name" value="" class="js-field">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="inn" data-error-name="ИНН">ИНН</label>
+                                                    <input type="text" name="inn" value="" id="inn" class="js-field" data-type="digits">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="ogrn" data-error-name="ОГРН">ОГРН</label>
+                                                    <input type="text" name="ogrn" value="" id="ogrn" class="js-field" data-type="digits">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="kpp" data-error-name="КПП">КПП</label>
+                                                    <input type="text" name="kpp" value="" id="kpp" class="js-field" data-type="digits">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row form-row--center">
+                                            <div class="col col-8">
+                                                <div class="form-field">
+                                                    <label for="legal-address">Юридический адрес</label>
+                                                    <input type="text" name="legal-address" value="" id="legal-address" class="js-field  js-address-field">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="link-blue address-copy js-address-copy" data-address-id="legal-address">скопировать адрес</div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-8">
+                                                <div class="form-field">
+                                                    <label for="document-address">Адрес для документов</label>
+                                                    <input type="text" name="document-address" value="" id="document-address" class="js-field  js-address-field">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="link-blue address-copy js-address-copy" data-address-id="document-address">скопировать адрес</div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-3">
+                                                <div class="form-field">
+                                                    <label for="person-contact-position">Должность лица для договора</label>
+                                                    <input type="text" name="person-contact-position" value="" id="person-contact-position" class="js-field">
+                                                </div>
+                                            </div>
+                                            <div class="col col-4">
+                                                <div class="form-field">
+                                                    <label for="person-contact-name">ФИО лица для договора</label>
+                                                    <input type="text" name="person-contact-name" value="" id="person-contact-name" class="js-field">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Контрагент и договора -->
+
+                                <!-- Банковские реквизиты -->
+                                <div class="personal-info__section js-legal-info-section">
+                                    <div class="personal-info__section-title">
+                                        <h2 class="section-header">Банковские реквизиты</h2>
+                                    </div>
+                                    <div class="personal-info__section-content">
+                                        <div class="row form-row">
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="bik" data-error-name="БИК">БИК</label>
+                                                    <input type="text" name="bik" value="" id="bik" class="js-field" data-type="digits">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="form-field">
+                                                    <label for="bank-name">Название банка</label>
+                                                    <input type="text" name="bank-name" value="" id="bank-name" class="js-field">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-4">
+                                                <div class="form-field">
+                                                    <label for="corr-account">Корр счет</label>
+                                                    <input type="text" name="corr-account" value="" id="corr-account" class="js-field" data-type="digits">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-row">
+                                            <div class="col col-4">
+                                                <div class="form-field">
+                                                    <label for="settlement-account">Расчетный счет</label>
+                                                    <input type="text" name="settlement-account" value="" id="settlement-account" class="js-field" data-type="digits">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Банковские реквизиты -->
+
+                                <!-- Доставка -->
+                                <div class="personal-info__section">
+                                    <div class="personal-info__section-title">
+                                        <h2 class="section-header">Доставка</h2>
+                                    </div>
+                                    <div class="personal-info__section-content">
+                                        <div class="row form-row">
+                                            <div class="col col-8">
+                                                <div class="form-field">
+                                                    <label for="delivery-address">Адрес для доставки товара</label>
+                                                    <input type="text" name="delivery-address" value="" id="delivery-address" class="js-field js-address-field">
+                                                </div>
+                                            </div>
+                                            <div class="col col-2">
+                                                <div class="link-blue address-copy js-address-copy" data-address-id="delivery-address">скопировать адрес</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Доставка -->
+
+                                <!-- Сохранение -->
+                                <div class="personal-info__section personal-info__section--save">
+                                    <div class="personal-info__section-content">
+                                        <div class="row form-row form-row--send">
+                                            <div class="col col-2">
+                                                <button class="btn btn--send btn--full btn--disable" id="personal-info-submit">
+                                                    <div class="btn__text">Сохранить изменения</div>
+                                                </button>
+                                            </div>
+                                            <div class="col col-6">
+                                                <!-- Блок вывода ошибок -->
+                                                <div class="form-error js-form-error">
+                                                    <!-- Обязательные поля -->
+                                                    <div class="form-error__block js-form-error-requered">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Обязательные поля -->
+
+                                                    <!-- Ошибки валидации -->
+                                                    <div class="form-error__block js-form-error-validate">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Неправильно заполнены:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END Ошибки валидации -->
+                                                </div>
+                                                <!-- END Блок вывода ошибок -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Сохранение -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Персональная информация -->
+            </main>
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

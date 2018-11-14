@@ -1,0 +1,53 @@
+// Fonts
+@import "partials/fonts";
+
+// reset default styles
+@import "partials/reset";
+
+// Variables, colors, function, mixins
+@import "partials/guide";
+
+// Body, loaders, hidden class
+@import "partials/main";
+
+// Typography
+@import "partials/typography";
+
+// Main grid and containers
+@import "partials/grid";
+
+// Header
+@import "partials/header";
+
+// Footer
+@import "partials/footer";
+
+// UI elements
+@import "partials/ui";
+
+// Teasers and banners
+@import "partials/teasers";
+
+// Modules (banners)
+@import "partials/modules";
+
+// Contacts page
+@import "partials/contacts";
+
+// Account pages
+@import "partials/account";
+
+// Order
+@import "partials/order";
+
+// Chat
+@import "partials/chat";
+
+// Product
+@import "partials/product";
+
+// Modules (banners)
+@import "partials/objects";
+
+// Service page
+@import "partials/services";

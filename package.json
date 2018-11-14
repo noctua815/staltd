@@ -1,0 +1,53 @@
+{
+  "name": "Stal-TD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vikasova",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bower": "^1.7.9",
+    "browser-sync": "^2.12.8",
+    "cssnano": "^3.7.0",
+    "gulp": "^3.9.1",
+    "gulp-advanced-file-include": "^0.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.6",
+    "gulp-debug": "^3.1.0",
+    "gulp-file-include": "^1.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svgfallback": "^4.0.1",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-typograf": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.5",
+    "path": "^0.12.7",
+    "postcss-assets": "^4.1.0",
+    "postcss-clearfix": "^1.0.0",
+    "postcss-inline-svg": "^3.0.0",
+    "postcss-scss": "^0.4.0",
+    "postcss-short": "^3.0.3",
+    "precss": "^1.4.0",
+    "rigger": "^0.5.10",
+    "rimraf": "^2.5.2",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "imagemin-optipng": "^5.2.1",
+    "modal-video": "^2.1.1"
+  },
+  "description": ""
+}

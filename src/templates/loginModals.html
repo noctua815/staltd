@@ -1,0 +1,248 @@
+<!-- Модальное окно - Войти на сайте -->
+<div class="modal js-modal" id="login-modal">
+    <div class="modal-wrapper">
+        <div class="modal-dialog modal-dialog--big">
+            <div class="modal-content">
+                <div class="modal-head">
+                    <div class="modal-title">Вход в личный кабинет</div>
+                    <div class="modal-close js-modal-close"></div>
+                </div>
+                <div class="modal-body modal-body--big-indent">
+                    <form class="form modal-form" action="" id="login-form">
+                        <div class="modal-form-fields">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="login-email">Электронная почта</label>
+                                    <input type="text" name="login-email" value="" id="login-email" class="js-field" data-required="true" data-type="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="login-password">Пароль</label>
+                                    <input type="password" name="login-password" value="" id="login-password" class="js-field" data-required="true">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-send">
+                            <div class="form-row">
+                                <div class="modal-send-full">
+                                    <div class="btn btn--small btn--blue btn--disable" id="login-submit">
+                                        <div class="btn__text">Войти</div>
+                                    </div>
+
+                                    <!-- Блок вывода ошибок -->
+                                    <div class="form-error form-error--center js-form-error">
+                                        <!-- Обязательные поля -->
+                                        <div class="form-error__block js-form-error-requered">
+                                            <div class="form-error__wr">
+                                                <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                <div class="form-error__fields js-form-error-fields"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Обязательные поля -->
+
+                                        <!-- Ошибки валидации -->
+                                        <div class="form-error__block js-form-error-validate">
+                                            <div class="form-error__wr">
+                                                <div class="form-error__message">Неправильно заполнены:</div>
+                                                <div class="form-error__fields js-form-error-fields"></div>
+                                            </div>
+                                        </div>
+                                        <!-- END Ошибки валидации -->
+                                    </div>
+                                    <!-- END Блок вывода ошибок -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-signin-add">
+                            <div class="modal-subtitle">Вход через соцсети</div>
+                            <div class="modal-social-btns sm-social-btns">
+                                <div class="sm-social-btn">
+                                    <svg class="sm-social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                        <path fill-rule="evenodd" d="M0 13.948V8.987h4V6.494c0-1.801.589-3.334 1.766-4.598C6.944.632 8.364 0 10.026 0H14v4.961h-3.974c-.26 0-.494.147-.701.442-.208.294-.312.649-.312 1.065v2.545H14v4.961H9.013V26H4.026V13.974h-4L0 13.948z"/>
+                                    </svg>
+                                </div>
+                                <div class="sm-social-btn">
+                                    <svg class="sm-social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="20" viewBox="0 0 35 20">
+                                        <path d="M0 1.257C.19 1.105.427.99.712.914.978.838 1.215.8 1.424.8h.256c.19 0 .418.01.684.029.417.019.721.028.911.028.114 0 .475-.019 1.082-.057.304-.019.58-.029.826-.029.247 0 .465.01.655.029.38.038.684.114.911.229.114.057.238.18.37.371.134.19.247.371.342.543.095.171.21.419.342.743.133.324.228.533.285.628a31.499 31.499 0 0 0 2.677 4.657l.2.315a4 4 0 0 0 .256.371c.075.095.16.21.256.343.095.133.2.238.313.314.114.076.218.162.313.257a.588.588 0 0 0 .342.172c.133.019.247.019.342 0 .531-.095.826-1.21.883-3.343.019-.362.028-.695.028-1 0-1.41-.142-2.38-.427-2.914a1.486 1.486 0 0 0-.456-.515 2.759 2.759 0 0 0-.712-.342c-.284-.096-.503-.2-.655-.315.266-.533.74-.885 1.424-1.057C13.556.086 14.477 0 15.635 0h1.509l.74.029.77.085.626.172.57.257.37.4c.17.343.275.743.313 1.2 0 .133.01.267.028.4 0 .38-.028.876-.085 1.486-.076.8-.114 1.295-.114 1.485a10.184 10.184 0 0 0-.028 2.4c.076.838.36 1.42.854 1.743.17-.019.332-.057.484-.114a1.31 1.31 0 0 0 .456-.314c.152-.153.256-.267.313-.343A65.019 65.019 0 0 1 23.124 8c.893-1.181 1.785-2.733 2.677-4.657l.257-.657.342-.772.341-.571.456-.4c.304-.133.664-.2 1.082-.2h.256c.38 0 .817.019 1.31.057a23.82 23.82 0 0 0 1.339.057c.17 0 .437-.01.797-.028.361-.02.674-.039.94-.058.266-.019.55-.01.854.029.304.038.551.095.74.171.19.077.324.2.4.372a.821.821 0 0 1 .085.371c0 .553-.332 1.381-.997 2.486a16.058 16.058 0 0 1-.996 1.514 47.84 47.84 0 0 1-1.31 1.657c-.532.648-.883 1.096-1.054 1.343-.038.038-.171.21-.399.515l-.513.685a2.942 2.942 0 0 0-.341.657c-.114.286-.162.543-.143.772 0 .152.029.295.086.428.057.134.152.277.285.429.132.152.227.267.284.343.057.076.19.2.4.371.208.172.322.276.34.315 1.349 1.238 2.412 2.352 3.19 3.342.76.99 1.14 1.705 1.14 2.143 0 .629-.485 1.02-1.453 1.172a9.88 9.88 0 0 1-1.51.114 9.03 9.03 0 0 1-1.224-.086c-.38-.038-.73-.057-1.054-.057-.493 0-.92.048-1.281.143h-.17c-1.254-.21-2.573-1.105-3.96-2.686a8.055 8.055 0 0 1-.484-.6 7.713 7.713 0 0 0-.626-.743 3.088 3.088 0 0 0-.655-.485c-.266-.153-.522-.21-.769-.172-.437.076-.73.353-.883.829-.152.476-.237 1.047-.256 1.714-.02.667-.114 1.133-.285 1.4-.247.457-.997.686-2.25.686a18.22 18.22 0 0 1-1.88-.114c-1.48-.153-2.828-.534-4.043-1.143-1.215-.61-2.174-1.257-2.877-1.943-.702-.686-1.47-1.572-2.306-2.657-1.975-2.534-3.845-5.6-5.61-9.2a37.297 37.297 0 0 1-.314-.657A20.655 20.655 0 0 1 .455 2.8 3.686 3.686 0 0 1 .229 2a9.578 9.578 0 0 1-.086-.771L0 1.257z"/>
+                                    </svg>
+                                </div>
+                                <div class="sm-social-btn">
+                                    <svg class="sm-social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21">
+                                        <path d="M.063 18.61c.422.043.844.064 1.267.064 2.476 0 4.685-.755 6.626-2.264a5.154 5.154 0 0 1-3.102-1.048c-.915-.684-1.54-1.558-1.878-2.62.281.056.612.084.992.084.492 0 .963-.063 1.413-.188-1.238-.238-2.265-.846-3.08-1.824A5.115 5.115 0 0 1 1.075 7.44v-.063a5.04 5.04 0 0 0 2.427.65A5.268 5.268 0 0 1 1.752 6.14a5.124 5.124 0 0 1-.655-2.536A5.1 5.1 0 0 1 1.836.943a14.871 14.871 0 0 0 4.854 3.92 15.03 15.03 0 0 0 6.141 1.634 5.913 5.913 0 0 1-.148-1.216c0-1.453.521-2.696 1.562-3.73C15.286.517 16.545 0 18.023 0c1.533 0 2.828.559 3.883 1.677a10.724 10.724 0 0 0 3.376-1.3c-.393 1.272-1.167 2.25-2.321 2.934A10.96 10.96 0 0 0 26 2.473c-.675 1.048-1.555 1.963-2.638 2.746v.691c0 1.411-.211 2.83-.633 4.255a15.285 15.285 0 0 1-1.9 4.066 16.26 16.26 0 0 1-3.06 3.458c-1.195 1.02-2.616 1.823-4.263 2.41-1.646.587-3.425.887-5.339.901-2.94 0-5.663-.79-8.167-2.368l.063-.021z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="login-link link-blue js-restore-btn">Восстановить пароль</div>
+                            <div class="login-link link-blue js-signin-btn">Зарегистрироваться, как новый покупатель</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Модальное окно - Войти на сайте -->
+
+<!-- Модальное окно - Регистрация на сайте -->
+<div class="modal js-modal" id="signin-modal">
+    <div class="modal-wrapper">
+        <div class="modal-dialog modal-dialog--big">
+            <div class="modal-content">
+                <div class="modal-head">
+                    <div class="modal-title">Регистрация на сайте</div>
+                    <div class="modal-close js-modal-close"></div>
+                </div>
+                <div class="modal-body modal-body--big-indent">
+                    <form class="form modal-form" action="" id="signin-form">
+                        <div class="modal-form-fields">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="signin-email">Электронная почта</label>
+                                    <input type="text" name="signin-email" value="" id="signin-email" class="js-field" data-required="true" data-type="email">
+                                </div>
+                            </div>
+                            <div class="form-row form-row--small-indent">
+                                <div class="form-field form-field--checkbox">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="confirm-subscribe" name="confirm-subscribe" type="checkbox">
+                                        <label class="checkbox__label" for="confirm-subscribe">Получать рассылку об акциях и предложениях</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form-row--small-indent">
+                                <div class="form-field form-field--checkbox">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input js-field" id="confirm-personal" name="confirm-personal" type="checkbox" data-required="true">
+                                        <label class="checkbox__label" for="confirm-personal" data-error-name="согласие на обработку персональной информации">Согласен с обработкой персональной информации</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-send">
+                            <div class="form-row">
+                                <div class="modal-send-full">
+                                    <div class="btn btn--small btn--blue btn--disable" id="signin-submit">
+                                        <div class="btn__text">Зарегистрироваться и войти</div>
+                                    </div>
+
+                                    <!-- Блок вывода ошибок -->
+                                    <div class="form-error form-error--center js-form-error">
+                                        <!-- Обязательные поля -->
+                                        <div class="form-error__block js-form-error-requered">
+                                            <div class="form-error__wr">
+                                                <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                <div class="form-error__fields js-form-error-fields"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Обязательные поля -->
+
+                                        <!-- Ошибки валидации -->
+                                        <div class="form-error__block js-form-error-validate">
+                                            <div class="form-error__wr">
+                                                <div class="form-error__message">Неправильно заполнены:</div>
+                                                <div class="form-error__fields js-form-error-fields"></div>
+                                            </div>
+                                        </div>
+                                        <!-- END Ошибки валидации -->
+                                    </div>
+                                    <!-- END Блок вывода ошибок -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-signin-add">
+                            <div class="modal-subtitle">Вход через соцсети</div>
+                            <div class="modal-social-btns sm-social-btns">
+                                <div class="sm-social-btn">
+                                    <svg class="sm-social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                        <path fill-rule="evenodd" d="M0 13.948V8.987h4V6.494c0-1.801.589-3.334 1.766-4.598C6.944.632 8.364 0 10.026 0H14v4.961h-3.974c-.26 0-.494.147-.701.442-.208.294-.312.649-.312 1.065v2.545H14v4.961H9.013V26H4.026V13.974h-4L0 13.948z"/>
+                                    </svg>
+                                </div>
+                                <div class="sm-social-btn">
+                                    <svg class="sm-social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="20" viewBox="0 0 35 20">
+                                        <path d="M0 1.257C.19 1.105.427.99.712.914.978.838 1.215.8 1.424.8h.256c.19 0 .418.01.684.029.417.019.721.028.911.028.114 0 .475-.019 1.082-.057.304-.019.58-.029.826-.029.247 0 .465.01.655.029.38.038.684.114.911.229.114.057.238.18.37.371.134.19.247.371.342.543.095.171.21.419.342.743.133.324.228.533.285.628a31.499 31.499 0 0 0 2.677 4.657l.2.315a4 4 0 0 0 .256.371c.075.095.16.21.256.343.095.133.2.238.313.314.114.076.218.162.313.257a.588.588 0 0 0 .342.172c.133.019.247.019.342 0 .531-.095.826-1.21.883-3.343.019-.362.028-.695.028-1 0-1.41-.142-2.38-.427-2.914a1.486 1.486 0 0 0-.456-.515 2.759 2.759 0 0 0-.712-.342c-.284-.096-.503-.2-.655-.315.266-.533.74-.885 1.424-1.057C13.556.086 14.477 0 15.635 0h1.509l.74.029.77.085.626.172.57.257.37.4c.17.343.275.743.313 1.2 0 .133.01.267.028.4 0 .38-.028.876-.085 1.486-.076.8-.114 1.295-.114 1.485a10.184 10.184 0 0 0-.028 2.4c.076.838.36 1.42.854 1.743.17-.019.332-.057.484-.114a1.31 1.31 0 0 0 .456-.314c.152-.153.256-.267.313-.343A65.019 65.019 0 0 1 23.124 8c.893-1.181 1.785-2.733 2.677-4.657l.257-.657.342-.772.341-.571.456-.4c.304-.133.664-.2 1.082-.2h.256c.38 0 .817.019 1.31.057a23.82 23.82 0 0 0 1.339.057c.17 0 .437-.01.797-.028.361-.02.674-.039.94-.058.266-.019.55-.01.854.029.304.038.551.095.74.171.19.077.324.2.4.372a.821.821 0 0 1 .085.371c0 .553-.332 1.381-.997 2.486a16.058 16.058 0 0 1-.996 1.514 47.84 47.84 0 0 1-1.31 1.657c-.532.648-.883 1.096-1.054 1.343-.038.038-.171.21-.399.515l-.513.685a2.942 2.942 0 0 0-.341.657c-.114.286-.162.543-.143.772 0 .152.029.295.086.428.057.134.152.277.285.429.132.152.227.267.284.343.057.076.19.2.4.371.208.172.322.276.34.315 1.349 1.238 2.412 2.352 3.19 3.342.76.99 1.14 1.705 1.14 2.143 0 .629-.485 1.02-1.453 1.172a9.88 9.88 0 0 1-1.51.114 9.03 9.03 0 0 1-1.224-.086c-.38-.038-.73-.057-1.054-.057-.493 0-.92.048-1.281.143h-.17c-1.254-.21-2.573-1.105-3.96-2.686a8.055 8.055 0 0 1-.484-.6 7.713 7.713 0 0 0-.626-.743 3.088 3.088 0 0 0-.655-.485c-.266-.153-.522-.21-.769-.172-.437.076-.73.353-.883.829-.152.476-.237 1.047-.256 1.714-.02.667-.114 1.133-.285 1.4-.247.457-.997.686-2.25.686a18.22 18.22 0 0 1-1.88-.114c-1.48-.153-2.828-.534-4.043-1.143-1.215-.61-2.174-1.257-2.877-1.943-.702-.686-1.47-1.572-2.306-2.657-1.975-2.534-3.845-5.6-5.61-9.2a37.297 37.297 0 0 1-.314-.657A20.655 20.655 0 0 1 .455 2.8 3.686 3.686 0 0 1 .229 2a9.578 9.578 0 0 1-.086-.771L0 1.257z"/>
+                                    </svg>
+                                </div>
+                                <div class="sm-social-btn">
+                                    <svg class="sm-social-btn__svg" xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21">
+                                        <path d="M.063 18.61c.422.043.844.064 1.267.064 2.476 0 4.685-.755 6.626-2.264a5.154 5.154 0 0 1-3.102-1.048c-.915-.684-1.54-1.558-1.878-2.62.281.056.612.084.992.084.492 0 .963-.063 1.413-.188-1.238-.238-2.265-.846-3.08-1.824A5.115 5.115 0 0 1 1.075 7.44v-.063a5.04 5.04 0 0 0 2.427.65A5.268 5.268 0 0 1 1.752 6.14a5.124 5.124 0 0 1-.655-2.536A5.1 5.1 0 0 1 1.836.943a14.871 14.871 0 0 0 4.854 3.92 15.03 15.03 0 0 0 6.141 1.634 5.913 5.913 0 0 1-.148-1.216c0-1.453.521-2.696 1.562-3.73C15.286.517 16.545 0 18.023 0c1.533 0 2.828.559 3.883 1.677a10.724 10.724 0 0 0 3.376-1.3c-.393 1.272-1.167 2.25-2.321 2.934A10.96 10.96 0 0 0 26 2.473c-.675 1.048-1.555 1.963-2.638 2.746v.691c0 1.411-.211 2.83-.633 4.255a15.285 15.285 0 0 1-1.9 4.066 16.26 16.26 0 0 1-3.06 3.458c-1.195 1.02-2.616 1.823-4.263 2.41-1.646.587-3.425.887-5.339.901-2.94 0-5.663-.79-8.167-2.368l.063-.021z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="login-link link-blue js-login-btn">Вход для постоянных покупателей</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Модальное окно - Регистрация на сайте -->
+
+<!-- Модальное окно - Восстановление доступа -->
+<div class="modal js-modal" id="restore-modal">
+    <div class="modal-wrapper">
+        <div class="modal-dialog modal-dialog--big">
+            <div class="modal-content">
+                <div class="modal-head">
+                    <div class="modal-title">Восстановление доступа</div>
+                    <div class="modal-close js-modal-close"></div>
+                </div>
+                <div class="modal-body modal-body--big-indent">
+                    <form class="form modal-form" action="" id="restore-form">
+                        <div class="modal-form-fields">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="restore-email">Электронная почта</label>
+                                    <input type="text" name="restore-email" value="" id="restore-email" class="js-field" data-required="true" data-type="email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-send">
+                            <div class="form-row">
+                                <div class="modal-send-full">
+                                    <div class="btn btn--small btn--blue btn--disable" id="restore-submit">
+                                        <div class="btn__text">Получить новый пароль</div>
+                                    </div>
+
+                                    <!-- Блок вывода ошибок -->
+                                    <div class="form-error form-error--center js-form-error">
+                                        <!-- Обязательные поля -->
+                                        <div class="form-error__block js-form-error-requered">
+                                            <div class="form-error__wr">
+                                                <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                <div class="form-error__fields js-form-error-fields"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Обязательные поля -->
+
+                                        <!-- Ошибки валидации -->
+                                        <div class="form-error__block js-form-error-validate">
+                                            <div class="form-error__wr">
+                                                <div class="form-error__message">Неправильно заполнены:</div>
+                                                <div class="form-error__fields js-form-error-fields"></div>
+                                            </div>
+                                        </div>
+                                        <!-- END Ошибки валидации -->
+                                    </div>
+                                    <!-- END Блок вывода ошибок -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-signin-add">
+                            <div class="login-link link-blue js-login-btn">Вход для постоянных покупателей</div>
+                            <div class="login-link link-blue js-signin-btn">Зарегистрироваться, как новый покупатель</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Модальное окно - Восстановление доступа -->

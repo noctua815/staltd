@@ -1,0 +1,3 @@
+$(function() {
+	$('#container').removeClass('loading');
+});

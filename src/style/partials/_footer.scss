@@ -1,0 +1,114 @@
+.footer {
+    margin-top: 40px;
+    background-color: $pale-grey;
+
+    &__wr {
+        display: flex;
+        align-items: baseline;
+        padding: 50px 0;
+        @media (max-width: $bigPhone) {
+            display: block;
+            padding: 25px 0 50px;
+        }
+    }
+
+    &__link {
+        & + & {
+            margin-top: 16px;
+        }
+    }
+
+    &__info {
+        width: calc(300 / 1180 * 100%);
+        @media (max-width: $tablet) {
+            width: calc(280 / 920 * 100%);
+        }
+        @media (max-width: $bigPhone) {
+            width: 100%;
+        }
+
+        &-row {
+            margin-top: 32px;
+            @media (max-width: $bigPhone) {
+                display: none;
+            }
+        }
+    }
+
+    &__content-row {
+        margin-top: 22px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        width: calc(330 / 1180 * 100%);
+        margin-left: calc(100 / 1180 * 100%);
+        @media (max-width: $tablet) {
+            display: block;
+            width: calc(180 / 920 * 100%);
+            margin-left: 20px;
+        }
+        @media (max-width: $bigPhone) {
+            display: none;
+        }
+
+        &-col {
+            & + & {
+                margin-left: 30px;
+                @media (max-width: $tablet) {
+                    margin: 36px 0 0;
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        width: calc(365 / 1180 * 100%);
+        margin-left: calc(70 / 1180 * 100%);
+        @media (max-width: $tablet) {
+            flex: 1;
+            margin-left: 20px;
+        }
+        @media (max-width: $bigPhone) {
+            width: 100%;
+            margin: 40px 0 0;
+        }
+
+        .phone-header {
+            margin-top: 4px;
+        }
+
+        &-block {
+            & + & {
+                margin-top: 35px;
+            }
+        }
+
+        &-row {
+            & + & {
+                margin-top: 16px;
+            }
+        }
+
+        .footer__content-row {
+            margin-top: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__mobile-menu {
+        display: none;
+        margin-top: 36px;
+        @media (max-width: $bigPhone) {
+            display: block;
+        }
+    }
+}

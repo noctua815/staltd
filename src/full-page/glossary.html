@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html')
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li>Справочник</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Справочник</h1>
+                            </div>
+                        </div>
+                        <div class="page-header__filters">
+                            <ul class="filters small-caps">
+                                <li class="active js-filter" data-filter="all">Популярное</li>
+                                <li class="js-filter" data-filter="article">Статьи</li>
+                                <li class="js-filter" data-filter="description">Описания</li>
+                                <li class="js-filter" data-filter="manual">Инструкции</li>
+                                <li class="js-filter" data-filter="certificate">Сертификаты</li>
+                                <li class="js-filter" data-filter="video">Видеообзоры</li>
+                                <li class="js-filter" data-filter="help">Советы</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__subfilters">
+                            <div class="slidedown js-slidedown">
+                                <div class="slidedown__switch js-slidedown-switch" data-closed-text="Выбрать темы" data-opened-text="Скрыть темы">
+                                    <div class="btn btn--big btn--full">
+                                        <span class="btn__text js-slidedown-text">Выбрать темы</span>
+                                    </div>
+                                </div>
+                                <div class="slidedown__body js-slidedown-body">
+                                    <div class="tags">
+                                        <div class="tag js-tag" data-filter="filter-1">Кровля</div>
+                                        <div class="tag js-tag" data-filter="filter-2">Отделка</div>
+                                        <div class="tag js-tag" data-filter="filter-3">Профнастил</div>
+                                        <div class="tag js-tag" data-filter="filter-4">Окраска</div>
+                                        <div class="tag js-tag" data-filter="filter-4">Покрытие</div>
+                                        <div class="tag js-tag" data-filter="filter-6">Крыша</div>
+                                        <div class="tag js-tag" data-filter="filter-7">Металл</div>
+                                        <div class="tag js-tag" data-filter="filter-8">Черепица</div>
+                                        <div class="tag js-tag" data-filter="filter-1">Кровля</div>
+                                        <div class="tag js-tag" data-filter="filter-2">Отделка</div>
+                                        <div class="tag js-tag" data-filter="filter-3">Профнастил</div>
+                                        <div class="tag js-tag" data-filter="filter-4">Окраска</div>
+                                        <div class="tag js-tag" data-filter="filter-4">Покрытие</div>
+                                        <div class="tag js-tag" data-filter="filter-6">Крыша</div>
+                                        <div class="tag js-tag" data-filter="filter-7">Металл</div>
+                                        <div class="tag js-tag" data-filter="filter-8">Черепица</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Справка -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="section-grid">
+                            <div class="grid">
+                                <div class="grid__wr js-filter-grid">
+                                    <div class="article-item js-filter-item" data-category="article filter-1 filter-2 filter-3" >
+                                        <a href="/glossary-item.html" class="article-item__link"></a>
+                                        <div class="article-item__wr">
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Статья по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="description filter-2 filter-4">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Описание покрытия из полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="manual ilter-3 filter-5 filter-6">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Инструкция по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="certificate filter-4 filter-1">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Сертификат на покрытия из полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="video filter-5 filter-2" >
+                                        <a href="/glossary-item.html" class="article-item__link"></a>
+                                        <div class="article-item__wr">
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Видеообзор по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="help filter-6 filter-8">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Советы по монтажу полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="article filter-7 filter-1" >
+                                        <a href="/glossary-item.html" class="article-item__link"></a>
+                                        <div class="article-item__wr">
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Статья по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="description filter-8 filter-2">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Описание покрытия из полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="manual ilter-3 filter-4">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Инструкция по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="certificate filter-4 filter-6">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Сертификат на покрытия из полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="video filter-5" >
+                                        <a href="/glossary-item.html" class="article-item__link"></a>
+                                        <div class="article-item__wr">
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Видеообзор по монтажу профнастила</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-item js-filter-item" data-category="help filter-6">
+                                        <div class="article-item__wr">
+                                            <a href="/glossary-item.html" class="article-item__link"></a>
+                                            <div class="article-item__icon">
+                                                <svg class="article-item__img" xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+                                                    <g>
+                                                        <path d="M43.636 5.795H32.727v-.681A4.773 4.773 0 0 0 27.955.34h-10.91a4.773 4.773 0 0 0-4.772 4.773v.681H1.363C.612 5.795 0 6.406 0 7.16v51.136c0 .754.61 1.364 1.364 1.364h42.272c.753 0 1.364-.61 1.364-1.364V7.16c0-.753-.61-1.364-1.364-1.364zM15 5.114c0-1.13.916-2.046 2.045-2.046h10.91c1.13 0 2.045.916 2.045 2.046v4.772H15V5.114zm27.273 51.818H2.727V8.522h9.546v2.728c0 .753.61 1.364 1.363 1.364h17.728c.753 0 1.363-.61 1.363-1.364V8.523h9.546v48.409z"/>
+                                                        <path d="M8.605 18.75h27.784v2.727H8.605zM8.605 35.114h11.42v2.727H8.605zM8.605 26.932h27.784v2.727H8.605zM30.682 34.623a5.632 5.632 0 0 0-5.618 5.604v.198a5.632 5.632 0 0 0 3.736 5.29l-3.307 6.015 2.387 1.315 3.143-5.713 2.195 2.12 1.896-1.963-2.046-1.978a5.625 5.625 0 0 0 3.246-5.086v-.198a5.632 5.632 0 0 0-5.632-5.604zm2.898 5.816a2.898 2.898 0 0 1-5.796 0v-.212a2.898 2.898 0 0 1 5.796 0v.212z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="article-item__title">
+                                                <div class="small-caps">Советы по монтажу полиэстера</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                    <div class="article-grid-sizer js-grid-sizer"></div>
+
+                                    <div class="filter-message small-caps js-filter-message">По заданным фильтрам ничего не найдено</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENd Справка -->
+
+            </main>
+            <!-- END Main section -->
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

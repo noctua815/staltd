@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', { "page": "objects", "main": "true" })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li>Объекты</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Объекты</h1>
+                            </div>
+                        </div>
+                        <div class="page-header__selects">
+                            <div class="objects-filters">
+                                <div class="objects-filters__filters">
+                                    <div class="objects-filters__service">
+                                        <select class="select js-select js-objects-filter" data-type="service">
+                                            <option value="all" selected>Все услуги</option>
+                                            <option value="service-1">Услуга 1</option>
+                                            <option value="service-2">Услуга 2</option>
+                                            <option value="service-3">Услуга 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="objects-filters__region">
+                                        <select class="select js-select js-objects-filter" data-type="region">
+                                            <option value="all" selected>По всей России</option>
+                                            <option value="region-1">Регион 1</option>
+                                            <option value="region-2">Регион 2</option>
+                                            <option value="region-3">Регион 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="objects-filters__year">
+                                        <select class="select js-select js-objects-filter" data-type="year">
+                                            <option value="all">Все</option>
+                                            <option value="2017" selected>За последний год</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="objects-filters__view">
+                                    <div class="view-btn view-btn--grid js-view-type" data-view-type="grid"><i></i>Плиткой</div>
+                                    <div class="view-btn view-btn--map js-view-type" data-view-type="map"><i></i>На карте</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="objects js-objects-body">
+                            <div class="objects-section js-objects-section" data-type="grid">
+                                <div class="section-grid">
+                                    <div class="grid">
+                                        <!-- Маркеры на карте формируются по data атрибутам.
+                                        data-coord - координаты маркера,
+                                        data-service - тип услуги/услуг (эти же услуги выводятся в select[data-type="service"]),
+                                        data-region - регион (регионы выводятся select[data-type="region"]),
+                                        data-year - год (года выводятся select[data-type="year"])-->
+
+                                        <div class="grid__wr js-objects-grid">
+                                            <div class="object-item js-object" data-coord="55.811643, 37.632470" data-service="service-1 service-2" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="58.080338, 32.959087" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="60.193766, 37.093808" data-service="service-2" data-region="region-3" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="58.587863, 43.066507" data-service="service-2 service-3" data-region="region-2" data-year="2016">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.472224, 62.050881" data-service="service-3" data-region="region-3" data-year="2015">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="62.310957, 41.176859" data-service="service-2" data-region="region-2" data-year="2014">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="56.947514, 47.944437" data-service="service-3" data-region="region-3" data-year="2013">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="64.016536, 55.503030" data-service="service-3" data-region="region-2" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="55.811643, 37.632470" data-service="service-1 service-2" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="58.080338, 32.959087" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="60.193766, 37.093808" data-service="service-2" data-region="region-3" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="58.587863, 43.066507" data-service="service-2 service-3" data-region="region-2" data-year="2016">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.472224, 62.050881" data-service="service-3" data-region="region-3" data-year="2015">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="62.310957, 41.176859" data-service="service-2" data-region="region-2" data-year="2014">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="56.947514, 47.944437" data-service="service-3" data-region="region-3" data-year="2013">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="64.016536, 55.503030" data-service="service-3" data-region="region-2" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="55.811643, 37.632470" data-service="service-1 service-2" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="58.080338, 32.959087" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="60.193766, 37.093808" data-service="service-2" data-region="region-3" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="58.587863, 43.066507" data-service="service-2 service-3" data-region="region-2" data-year="2016">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.472224, 62.050881" data-service="service-3" data-region="region-3" data-year="2015">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="63.823342, 53.042093" data-service="service-1 service-3" data-region="region-1" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="62.310957, 41.176859" data-service="service-2" data-region="region-2" data-year="2014">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="56.947514, 47.944437" data-service="service-3" data-region="region-3" data-year="2013">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-item js-object" data-coord="64.016536, 55.503030" data-service="service-3" data-region="region-2" data-year="2017">
+                                                <div class="object-item__wr">
+                                                    <div class="object-item__date">март 2017</div>
+                                                    <a class="object-item__link" href="/object-page.html"></a>
+                                                    <div class="object-item__thumb">
+                                                        <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                                    </div>
+                                                    <div class="object-item__content">
+                                                        <div class="object-item__title">
+                                                            <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                        </div>
+                                                        <div class="object-item__descr">
+                                                            <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                            <div class="objects-grid-sizer js-grid-sizer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-pagination">
+                                    <ul class="pagination">
+                                        <li><a href="/">1</a></li>
+                                        <li class="active">2</li>
+                                        <li><a href="/">3</a></li>
+                                        <li><a href="/">4</a></li>
+                                        <li><a href="/">5</a></li>
+                                        <li><a href="/">6</a></li>
+                                        <li><a href="/">7</a></li>
+                                        <li><a href="/">8</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="objects-section js-objects-section" data-type="map">
+                                <div class="objects-map-container">
+                                    <div class="objects-map" id="objects-map"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <script type="text/javascript">
+                function waitLoading() {
+                    window.onload = function() {
+                        GoogleMap.init({
+                            type: 'object'
+                        });
+                    }
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI4N96MBAN0vY5s5URbZ8eCEKiwLtoECE&libraries=places&callback=waitLoading" async defer></script>
+            <!-- END Main section -->
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

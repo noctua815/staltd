@@ -1,0 +1,428 @@
+/*
+ * Block text-content
+ */
+.text-content {
+    & > :last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        & > :last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    & + h3 {
+        margin-top: 18px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    ol,
+    ul {
+        font-size: 14px;
+        line-height: 1.43;
+        margin: 20px 0 20px 20px;
+
+        li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        li + li {
+            margin-top: 20px;
+        }
+    }
+
+    ol {
+        li {
+            counter-increment: item;
+
+            &:before {
+                content: counter(item);
+                position: absolute;
+                left: 0;
+                top: 1px;
+                @include GilroyBoldFont;
+                font-size: 14px;
+                line-height: 1.43;
+            }
+        }
+    }
+
+    ul {
+        li {
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 4px;
+                height: 10px;
+                background-color: $black;
+            }
+        }
+    }
+
+    h2 {
+        @include GilroyBoldFont;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+
+        &.small-h2 {
+            font-size: 12px;
+            line-height: 1.67;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+        }
+    }
+
+    h3,
+    h4 {
+        @include GilroyBoldFont;
+        font-size: 14px;
+        line-height: 1.42;
+        margin-bottom: 10px;
+    }
+}
+
+.link-blue,
+a {
+    color: $cool-blue;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+.link-black {
+    color: $black;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+.clear-link {
+    font-size: 0;
+    border: none;
+}
+/*
+ * Headers
+ */
+.page-header-text,
+h1 {
+    @include LisaFont;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @media (max-width: $phone) {
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: 1px;
+    }
+}
+
+.page-header-secondary {
+    @include LisaFont;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @media (max-width: $phone) {
+        font-size: 26px;
+        letter-spacing: 0.6px;
+    }
+}
+
+.section-comment,
+.section-header {
+    @include GilroyBoldFont;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @media (max-width: $phone) {
+        font-size: 14px;
+    }
+}
+
+.section-comment {
+    color: $grey;
+}
+
+.comment-header {
+    @include GilroyBoldFont;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: $grey;
+    text-transform: uppercase;
+}
+
+.service-banner-title {
+    @include LisaFont;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.small-caps {
+    @include GilroyBoldFont;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &--grey {
+        color: $grey;
+    }
+
+    &--blue {
+        color: $cool-blue;
+    }
+
+    &--organge {
+        color: $orange;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+
+.smallest-caps {
+    @include GilroyBoldFont;
+    font-size: 9px;
+    line-height: 1.56;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &--grey {
+        color: $grey;
+    }
+
+    &--shadow {
+        color: $white;
+        text-shadow: 0 0 4px rgba(26, 26, 26, 0.52);
+    }
+
+    &--blue {
+        color: $cool-blue;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+
+.menu-link {
+    @include GilroyBoldFont;
+    font-size: 9px;
+    line-height: 1.56;
+    letter-spacing: 1px;
+    color: $cool-blue;
+    text-transform: uppercase;
+}
+
+.smallest-header {
+    @include GilroyBoldFont;
+    font-size: 14px;
+    line-height: 1.43;
+
+    &--white {
+        color: $white;
+    }
+}
+
+.extra-small-header {
+    @include GilroyBoldFont;
+    font-size: 12px;
+    line-height: 1.67;
+
+    &--white {
+        color: $white;
+    }
+}
+
+.city-header {
+    @include GilroyBoldFont;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $cool-blue;
+}
+
+.phone-header {
+    @include GilroyBoldFont;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $black;
+}
+/*
+ * Text
+ */
+.data-text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.paragraph,
+p {
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.small-text,
+p.small-text {
+    font-size: 12px;
+    line-height: 1.67;
+
+    &--white {
+        color: $white;
+    }
+
+    & + & {
+        margin-top: 20px;
+    }
+}
+
+.smallest-text {
+    font-size: 10px;
+    line-height: 1;
+
+    &--grey {
+        color: $grey;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+
+.item-title {
+    @include GilroyBoldFont;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.3px;
+    color: $black;
+}
+
+.num-feature {
+    font-size: 32px;
+    line-height: 1;
+    color: $black;
+}
+
+.caps-link {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    color: $white;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+.arrow-link {
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    color: $white;
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 5px;
+        height: 7px;
+        margin: 3px 0 0 6px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform-origin: center;
+        transition: opacity 0.3s ease;
+    }
+
+    &:before {
+        opacity: 1;
+        background-image: svg-load('../img/svg/breadcrumbs-arrow.svg', fill=$white);
+    }
+
+    &:after {
+        opacity: 0;
+        background-image: svg-load('../img/svg/breadcrumbs-arrow.svg', fill=$black);
+    }
+
+    &:hover {
+        color: $black;
+
+        &:before {
+            opacity: 0;
+        }
+
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.black-cl {
+    color: $black;
+}
+
+.white-cl {
+    color: $white;
+}
+
+.grey-cl {
+    color: $grey;
+}
+
+b,
+strong {
+    @include GilroyBoldFont;
+}
+
+.price {
+    white-space: nowrap;
+
+    &:after {
+        content: '₽';
+        margin-left: 3px;
+    }
+
+    &.big-price {
+        &:after {
+            margin-left: 10px;
+        }
+    }
+}
+
+.sp-price {
+    white-space: nowrap;
+
+    &:after {
+        content: attr(data-price-for);
+        margin-left: 3px;
+    }
+}

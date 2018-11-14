@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', { "login": true })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Личный кабинет</a></li>
+                                <li><a href="">Заявки</a></li>
+                                <li>Заявка N12536</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Заявка N12536</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Заявка -->
+                <div class="section">
+                    <div class="wrapper">
+                        <!-- Статус заявки -->
+                        <ul class="order-progress">
+                            <li class="active">Готова к отправке</li>
+                            <li>Отправлена</li>
+                            <li>Принята в обработку</li>
+                            <li>Комплектуется</li>
+                            <li>Готова к отгрузке</li>
+                            <li>Товар отгружен</li>
+                        </ul>
+                        <!-- END Статус заявки -->
+                    </div>
+                </div>
+
+                <!-- Список товаров и услуг-->
+                <div class="order-section">
+                    <!-- Товары -->
+                    <div class="order-section__block" data-order-block="items">
+                        <div class="order-section__title">
+                            <div class="wrapper">
+                                <div class="section-header">
+                                    <h2>Товары</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-section__body" id="order-list">
+                            <div class="order-item-list">
+                                <div class="order-item js-oi" data-id="1">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price js-oi-price" data-price-for="₽⁄м²">1 220,60</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-input" data-dimention="п.м.">
+                                                    <input class="js-oi-counter" type="text" value="14">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">0</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input js-oi-service" id="checkBox1" type="checkbox" checked>
+                                                    <label class="checkbox__label" for="checkBox1">Монтаж</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item js-oi" data-id="2">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price js-oi-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-input" data-dimention="п.м.">
+                                                    <input class="js-oi-counter" type="text" value="14">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">0</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input js-oi-service" id="checkBox2" type="checkbox">
+                                                    <label class="checkbox__label" for="checkBox2">Монтаж</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item js-oi" data-id="3">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount">
+                                                <div class="discount js-oi-discount" data-discount="0.05" data-min="100">Скидка 5% от 100 шт</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price js-oi-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-input" data-dimention="п.м.">
+                                                    <input class="js-oi-counter" type="text" value="14">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">0</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input js-oi-service" id="checkBox3" type="checkbox">
+                                                    <label class="checkbox__label" for="checkBox3">Монтаж</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item js-oi" data-id="4">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__price sp-price js-oi-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-input" data-dimention="п.м.">
+                                                    <input class="js-oi-counter" type="text" value="14">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">0</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input js-oi-service" id="checkBox4" type="checkbox">
+                                                    <label class="checkbox__label" for="checkBox4">Монтаж</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item js-oi" data-id="5">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/product.html">Название модификации товара 1 с характеристиками</a>
+                                        </div>
+                                        <div class="order-item__discount-col">
+                                            <div class="order-item__discount"></div>
+                                        </div>
+                                        <div class="order-item__price-col">
+                                            <div class="order-item__price-wr">
+                                                <div class="order-item__old-price">
+                                                    <div class="old-price">1 200</div>
+                                                </div>
+                                                <div class="order-item__price sp-price js-oi-price" data-price-for="₽⁄м²">120</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__count-col">
+                                            <div class="order-item__count">
+                                                <div class="order-input" data-dimention="п.м.">
+                                                    <input class="js-oi-counter" type="text" value="14">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">0</div>
+                                        </div>
+                                        <div class="order-item__service-col">
+                                            <div class="order-item__service">
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input js-oi-service" id="checkBox5" type="checkbox">
+                                                    <label class="checkbox__label" for="checkBox5">Монтаж</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Товары -->
+
+                    <!-- Услуги -->
+                    <div class="order-section__block" data-order-block="services">
+                        <div class="order-section__title">
+                            <div class="wrapper">
+                                <div class="section-header">
+                                    <h2>Услуги</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-section__body" id="service-list">
+                            <div class="order-item-list">
+                                <div class="order-item order-item--service js-ois" data-id="1" data-type="service">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/service-1.html">Монтаж сэндвич-панелей </a>
+                                        </div>
+
+                                        <div class="order-item__info-col">
+                                            <div class="order-item__info">
+                                                250 м2, Луга, тип панелей — кровельные, наполнение панелей — минеральная вата, толщина панелей — 5 см
+                                            </div>
+                                        </div>
+
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">120</div>
+                                        </div>
+
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-item order-item--service js-ois" data-id="2" data-type="service">
+                                    <div class="order-item__wr">
+                                        <div class="order-item__name-col">
+                                            <a class="order-item__name js-oi-name" href="/service-1.html">Фасадные работы</a>
+                                        </div>
+
+                                        <div class="order-item__info-col">
+                                            <div class="order-item__info">
+                                                250 м2, Луга, тип панелей — кровельные, наполнение панелей — минеральная вата, толщина панелей — 5 см
+                                            </div>
+                                        </div>
+
+                                        <div class="order-item__total-price-col">
+                                            <div class="order-item__total-price data-text price js-oi-total-price">120</div>
+                                        </div>
+
+                                        <div class="order-item__btn-col">
+                                            <div class="order-item__btn">
+                                                <div class="order-btn js-order-btn" data-type="remove">
+                                                    <div class="order-btn__status">Удалить из заявки</div>
+                                                    <div class="order-btn__actions">
+                                                        <div class="order-btn__btn order-btn__undo"></div>
+                                                        <div class="order-btn__action"></div>
+                                                        <div class="order-btn__btn order-btn__close"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Услуги -->
+
+                    <!-- Итоговая сумма -->
+                    <div class="order-section__total">
+                        <div class="wrapper">
+                            <div class="total-sum">
+                                <div class="total-sum__text">Общая сумма</div>
+                                <div class="total-sum__value price" id="order-total-sum">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Итоговая сумма -->
+                </div>
+                <!-- END Список товаров и услуг-->
+
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="order-send-btn">
+                            <div class="btn btn--blue send-btn" id="order-send">
+                                <div class="btn__text">Сделать заказ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Заявка -->
+
+                <!-- Чат -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="chat-block">
+                            <div class="chat-block__wr">
+                                <div class="chat-block__info">
+                                    <div class="chat-block__info-row">
+                                        <div class="chat-block__info-title">
+                                            <div class="small-caps">Менеджер по заявке</div>
+                                        </div>
+
+                                        <div class="chat-block__info-manager">
+                                            <div class="staff-card">
+                                                <div class="staff-card__photo">
+                                                    <img class="staff-card__img" src="pic/staff/4.png" srcset="pic/staff/4@2x.png 2x" alt="Имя">
+                                                </div>
+                                                <div class="staff-card__info">
+                                                    <div class="staff-card__name">Артём Бабенко</div>
+                                                    <div class="staff-card__phones">
+                                                        <a href="tel:+7 (951) 668-20-41" class="link-black">+7 (951) 668-20-41</a>
+                                                        <a href="tel:+7 (812) 449-46-48" class="link-black">+7 (812) 449-46-48 (доб. 261)</a>
+                                                    </div>
+                                                    <div class="staff-card__mail">
+                                                        <a href="mailto:ordin_nm@mail.ru">ordin_nm@mail.ru</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="chat-block__info-row">
+                                        <div class="chat-block__info-title">
+                                            <div class="small-caps">Документы и файлы</div>
+                                        </div>
+
+                                        <div class="chat-block__info-text">
+                                            <p>После оформления заказа здесь вы сможете скачать весь необходимый пакет документов, инструкции и сертификаты</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="chat-block__chat">
+                                    <div class="chat" id="chat">
+                                        <div class="chat__wr">
+                                            <div class="chat__status">
+                                                <div class="chat__status-text">Менеджер в сети</div>
+                                            </div>
+                                            <div class="chat__body js-chat-body">
+                                                <div class="chat__messages js-chat-messages-container">
+                                                    <div class="chat-message">
+                                                        <div class="chat-message__user">
+                                                            <img src="pic/staff/4.png" srcset="pic/staff/4@2x.png" sr alt="" class="chat-message__user-img">
+                                                        </div>
+                                                        <div class="chat-message__message">Да, мы включаем это в общую стоимость, можете не переживать и не волноваться по этому поводу. Все дополнительные расходы учтены нами. Выставлять вам счет?</div>
+                                                    </div>
+                                                    <div class="chat-message">
+                                                        <div class="chat-message__user">
+                                                            <div class="chat-message__user-name">Я</div>
+                                                        </div>
+                                                        <div class="chat-message__message">Скажите, а можно заплатить по безналу?</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat__message">
+                                                <div class="chat__message-wr">
+                                                    <form class="form chat-form" id="chat-form" action="">
+                                                        <div class="chat-form__input">
+                                                            <div class="form-field chat-form-field">
+                                                                <label for="chat-message">Ваше сообщение</label>
+                                                                <input class="js-field js-chat-message" id="chat-message" type="text" name="chat-message" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="chat-form__send">
+                                                            <button class="btn btn--send btn--disable js-chat-send" type="button" name="chat-send">
+                                                            <span class="btn__text">Отправить</span>
+                                                        </button>
+                                                        </div>
+
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                            <div class="chat__footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Чат -->
+            </main>
+
+            <!-- Модальное окно - Оформление заказа -->
+            <div class="modal js-modal" id="start-modal">
+                <div class="modal-wrapper">
+                    <div class="modal-dialog modal-dialog--center modal-dialog--big">
+                        <div class="modal-content">
+                            <div class="modal-head">
+                                <div class="modal-title">Оформление заказа</div>
+                                <div class="modal-close js-modal-close"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form modal-form">
+                                    <div class="btn btn--blue btn--small js-btn-next">
+                                        <div class="btn__text">Оформить как новый клиент</div>
+                                    </div>
+                                    <div class="btn btn--blue btn--small">
+                                        <div class="btn__text">У меня есть аккаунт на сайте</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Модальное окно - Оформление заказа -->
+
+            <!-- Модальное окно - Контактные данные -->
+            <div class="modal js-modal" id="contact-modal">
+                <div class="modal-wrapper">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-head">
+                                <div class="modal-title">Контактные данные</div>
+                                <div class="modal-close js-modal-close"></div>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form modal-form" action="" id="order-contact-info">
+                                    <div class="modal-form-fields">
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="name">Имя</label>
+                                                <input type="text" class="js-field" name="name" id="name" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="email">Электронная почта</label>
+                                                <input type="text" name="email" value="" id="email" class="js-field" data-required="true" data-type="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="phone">Контактный телефон</label>
+                                                <input type="text" name="phone" value="" id="phone" class="js-field" data-required="true" data-type="phone">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field form-field--flex">
+                                                <div class="radio-btn">
+                                                    <input class="radio-btn__input js-field" type="radio" id="legal-person" name="person-type" value="legal" checked>
+                                                    <label class="radio-btn__label" for="legal-person">Юридическое лицо</label>
+                                                </div>
+
+                                                <div class="radio-btn">
+                                                    <input class="radio-btn__input js-field" type="radio" id="physical-person" name="person-type" value="physical">
+                                                    <label class="radio-btn__label" for="physical-person">Частный клиент</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-send modal-send--big-indent">
+                                        <div class="form-row form-row--flex">
+                                            <div class="modal-send-back">
+                                                <div class="btn btn--small js-btn-back">
+                                                    <div class="btn__text">Назад</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-send-next">
+                                                <div class="btn btn--small btn--blue btn--disable js-btn-next" id="order-contact-info-submit">
+                                                    <div class="btn__text">Далее</div>
+                                                </div>
+
+                                                <!-- Блок вывода ошибок -->
+                                                <div class="form-error form-error--normal js-form-error">
+                                                    <!-- Обязательные поля -->
+                                                    <div class="form-error__block js-form-error-requered">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Обязательные поля -->
+
+                                                    <!-- Ошибки валидации -->
+                                                    <div class="form-error__block js-form-error-validate">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Неправильно заполнены:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END Ошибки валидации -->
+                                                </div>
+                                                <!-- END Блок вывода ошибок -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Модальное окно - Контактные данные -->
+
+            <!-- Модальное окно - Данные контрагента -->
+            <div class="modal js-modal" id="company-modal">
+                <div class="modal-wrapper">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-head">
+                                <div class="modal-title">Данные контрагента</div>
+                                <div class="modal-close js-modal-close"></div>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form modal-form" action="" id="order-company-info">
+                                    <div class="modal-form-fields">
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="legal-name">Юридическое название компании</label>
+                                                <input type="text" name="legal-name" id="legal-name" value="" class="js-field">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="inn" data-error-name="ИНН">ИНН</label>
+                                                <input type="text" name="inn" value="" id="inn" class="js-field" data-type="digits">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="ogrn" data-error-name="ОГРН">ОГРН</label>
+                                                <input type="text" name="ogrn" value="" id="ogrn" class="js-field" data-type="digits">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="kpp" data-error-name="КПП">КПП</label>
+                                                <input type="text" name="kpp" value="" id="kpp" class="js-field" data-type="digits">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="legal-address">Юридический адрес</label>
+                                                <input type="text" name="legal-address" value="" id="legal-address" class="js-field">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="document-address">Адрес для документов</label>
+                                                <input type="text" name="document-address" value="" id="document-address" class="js-field">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="person-contact-position">Должность лица для договора</label>
+                                                <input type="text" name="person-contact-position" value="" id="person-contact-position" class="js-field">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="person-contact-name">ФИО лица для договора</label>
+                                                <input type="text" name="person-contact-name" value="" id="person-contact-name" class="js-field">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-send modal-send--small-indent">
+                                        <div class="form-row form-row--flex">
+                                            <div class="modal-send-miss">
+                                                <div class="form-file">
+                                                    <!-- Поддерживает выбор нескольких файлов. Атрибут multiple. При выборе нескольких файлов показывает их количество. -->
+                                                    <div class="file-btn js-file">
+                                                        <label class="file-btn__label js-file-label" for="order-files">Загрузить файл реквизитов</label>
+                                                        <div class="file-btn__del js-file-del">
+                                                            <svg class="file-btn__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                                <path d="M4.243 5.657L0 1.414 1.414 0l4.243 4.243L9.899 0l1.415 1.414L7.07 5.657l4.243 4.242-1.415 1.415L5.657 7.07l-4.243 4.243L0 9.899z"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <input class="file-btn__input js-file-input" type="file" name="files[]" id="order-files" accept="image/jpeg,image/jpg,image/x-png,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-send-back">
+                                                <div class="btn btn--small js-btn-back">
+                                                    <div class="btn__text">Назад</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-send-next">
+                                                <div class="btn btn--small btn--blue btn--disable js-btn-next" id="order-company-info-submit">
+                                                    <div class="btn__text">Далее</div>
+                                                </div>
+
+                                                <!-- Блок вывода ошибок -->
+                                                <div class="form-error form-error--normal js-form-error">
+                                                    <!-- Обязательные поля -->
+                                                    <div class="form-error__block js-form-error-requered">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Обязательные поля -->
+
+                                                    <!-- Ошибки валидации -->
+                                                    <div class="form-error__block js-form-error-validate">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Неправильно заполнены:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END Ошибки валидации -->
+                                                </div>
+                                                <!-- END Блок вывода ошибок -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Модальное окно - Данные контрагента -->
+
+            <!-- Модальное окно - Банковские реквизиты -->
+            <div class="modal js-modal" id="bank-modal">
+                <div class="modal-wrapper">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-head">
+                                <div class="modal-title">Банковские реквизиты</div>
+                                <div class="modal-close js-modal-close"></div>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form modal-form" action="" id="order-bank-info">
+                                    <div class="modal-form-fields">
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="bik" data-error-name="БИК">БИК</label>
+                                                <input type="text" name="bik" value="" id="bik" class="js-field" data-type="digits">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="bank-name">Название банка</label>
+                                                <input type="text" name="bank-name" value="" id="bank-name" class="js-field">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="corr-account">Корр счет</label>
+                                                <input type="text" name="corr-account" value="" id="corr-account" class="js-field" data-type="digits">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="settlement-account">Расчетный счет</label>
+                                                <input type="text" name="settlement-account" value="" id="settlement-account" class="js-field" data-type="digits">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-send">
+                                        <div class="form-row form-row--flex">
+                                            <div class="modal-send-back">
+                                                <div class="btn btn--small js-btn-back">
+                                                    <div class="btn__text">Назад</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-send-next">
+                                                <div class="btn btn--small btn--blue btn--disable js-btn-next" id="order-bank-info-submit">
+                                                    <div class="btn__text">Далее</div>
+                                                </div>
+
+                                                <!-- Блок вывода ошибок -->
+                                                <div class="form-error form-error--normal js-form-error">
+                                                    <!-- Обязательные поля -->
+                                                    <div class="form-error__block js-form-error-requered">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Обязательные поля -->
+
+                                                    <!-- Ошибки валидации -->
+                                                    <div class="form-error__block js-form-error-validate">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Неправильно заполнены:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END Ошибки валидации -->
+                                                </div>
+                                                <!-- END Блок вывода ошибок -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Модальное окно - Банковские реквизиты -->
+
+            <!-- Модальное окно - Доставка -->
+            <div class="modal js-modal" id="delivery-modal">
+                <div class="modal-wrapper">
+                    <div class="modal-dialog modal-dialog--space">
+                        <div class="modal-content">
+                            <div class="modal-head">
+                                <div class="modal-title">Выберите адрес доставки</div>
+                                <div class="modal-close js-modal-close"></div>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form modal-form" action="" id="order-delivery-info">
+                                    <div class="modal-form-fields">
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <label for="delivery-address">Адрес для доставки товара</label>
+                                                <input type="text" name="delivery-address" value="" id="delivery-address" class="js-field" data-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-row--small-indent">
+                                            <div class="form-field form-field--checkbox">
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input" id="order-pickup" name="order-pickup" value="pickup" type="checkbox">
+                                                    <label class="checkbox__label" for="order-pickup">Самовывоз</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-send">
+                                        <div class="form-row form-row--flex">
+                                            <div class="modal-send-back">
+                                                <div class="btn btn--small js-btn-back">
+                                                    <div class="btn__text">Назад</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-send-next">
+                                                <div class="btn btn--small btn--blue btn--disable js-btn-next" id="order-submit">
+                                                    <div class="btn__text">Отправить заявку</div>
+                                                </div>
+
+                                                <!-- Блок вывода ошибок -->
+                                                <div class="form-error form-error--normal js-form-error">
+                                                    <!-- Обязательные поля -->
+                                                    <div class="form-error__block js-form-error-requered">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Не заполнены обязательные поля:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Обязательные поля -->
+
+                                                    <!-- Ошибки валидации -->
+                                                    <div class="form-error__block js-form-error-validate">
+                                                        <div class="form-error__wr">
+                                                            <div class="form-error__message">Неправильно заполнены:</div>
+                                                            <div class="form-error__fields js-form-error-fields"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END Ошибки валидации -->
+                                                </div>
+                                                <!-- END Блок вывода ошибок -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Модальное окно - Доставка -->
+
+            <!-- Модальное окно - Завершение заказа -->
+            <div class="modal js-modal" id="order-completed-modal">
+                <div class="modal-wrapper">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-head">
+                                <div class="modal-title">Ваша заявка успешно отправлена</div>
+                                <div class="modal-close js-modal-close"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-comleted">
+                                    <div class="modal-comleted__pse"></div>
+                                    <div class="modal-comleted__info">
+                                        <div class="modal-comleted__info-text">Спасибо за ваш заказ, приступаем к работе <span>🚀</span></div>
+                                        <div class="modal-comleted__manager">
+                                            <div class="round-photo">
+                                                <img class="round-photo__img" src="pic/staff/4.png" srcset="pic/staff/4@2x.png" alt="Имя">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-comleted__links">
+                                        <div class="modal-comleted__links-item">
+                                            <a href="/orders.html" class="btn btn--small">
+                                            <span class="btn__text">Мои заявки</span>
+                                        </a>
+                                        </div>
+                                        <div class="modal-comleted__links-item">
+                                            <a href="/catalog.html" class="btn btn--blue btn--small">
+                                            <span class="btn__text">Каталог</span>
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Модальное окно - Завершение заказа -->
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

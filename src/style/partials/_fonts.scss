@@ -1,0 +1,64 @@
+/*
+ * Lisa
+ */
+@font-face {
+    font-family: 'Lisa';
+    src: url("/fonts/Lisa.woff2") format('woff2'), url("/fonts/Lisa.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+@mixin LisaFont {
+    font-family: 'Lisa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*
+ * Gilroy
+ */
+/*
+ * Regular
+ */
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url("/fonts/Gilroy-Regular.woff2") format('woff2'), url("/fonts/Gilroy-Regular.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+@mixin GilroyRegFont {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+/*
+ * Regular Italic
+ */
+@font-face {
+    font-family: 'Gilroy-RegularItalic';
+    src: url("/fonts/Gilroy-RegularItalic.woff2") format('woff2'), url("/fonts/Gilroy-RegularItalic.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+@mixin GilroyRegItalicFont {
+    font-family: 'Gilroy-RegularItalic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+/*
+ * Bold
+ */
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url("/fonts/Gilroy-Bold.woff2") format('woff2'), url("/fonts/Gilroy-Bold.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+@mixin GilroyBoldFont {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}

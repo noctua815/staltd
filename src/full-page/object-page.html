@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('head.html')
+
+<body>
+    <div class="container-wr">
+        <div class="container loading" id="container">
+            @@include('header.html', { "page": "objects" })
+
+            <!-- Main section -->
+            <main class="main">
+                <div class="page-header">
+                    <div class="wrapper">
+                        <div class="page-header__breadcrumbs">
+                            <ul class="breadcrumbs">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Объекты</a></li>
+                                <li>Цементный завод промышленно-строительной группы ЛСР</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__main">
+                            <div class="page-header__title">
+                                <h1>Цементный завод Группы ЛСР</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка объекта -->
+                <div class="section">
+                    <div class="object-card">
+                        <div class="object-card__wr">
+                            <div class="object-card__slider js-object-slider-wr">
+                                <ul class="object-slider visuallyhidden" id="object-slider">
+                                    <li data-thumb="/pic/objects/1.jpeg">
+                                        <img src="/pic/objects/1.jpeg" />
+                                    </li>
+                                    <li data-thumb="/pic/objects/2.jpeg">
+                                        <img src="/pic/objects/2.jpeg" />
+                                    </li>
+                                    <li data-thumb="/pic/objects/3.jpeg">
+                                        <img src="/pic/objects/3.jpeg" />
+                                    </li>
+                                    <li data-thumb="/pic/objects/1.jpeg">
+                                        <img src="/pic/objects/1.jpeg" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="object-card__info">
+                                <div class="object-info">
+                                    <div class="object-info__rigion small-caps">
+                                        Ленинградская область
+                                    </div>
+                                    <div class="object-info__subrigion smallest-caps">
+                                        Сланцевское городское поселение, Сланцы
+                                    </div>
+                                    <div class="object-info__date smallest-caps">
+                                        март 2017
+                                    </div>
+                                    <div class="object-info__volume">
+                                        <div class="smallest-caps black-cl">Объем поставок</div>
+                                        <div class="num-feature white-cl">1200 тонн</div>
+                                    </div>
+                                    <div class="object-info__materials">
+                                        <div class="smallest-caps black-cl">Использованные материалы</div>
+
+                                        <div class="object-info__materials-list small-text">
+                                            <a href="/product.html">Профлист С8 → Полиэстер RAL 3456</a>
+                                            <a href="/product.html">Профлист С44 → Полиэстер RAL 2345</a>
+                                            <a href="/product.html">Профлист Н75  → Полиэстер RAL 3456 </a>
+                                            <a href="/">Сэндвич-панели поэлементной сборки</a>
+                                            <a href="/">Фасадная подсистема</a>
+                                            <a href="/">Снегозадержатель трубчатый</a>
+                                        </div>
+                                    </div>
+                                    <div class="object-info__links">
+                                        <div class="object-info__links-top">
+                                            <div class="object-info__link">
+                                                <a href="#object-materials" class="caps-link js-anchor-scroll">
+                                                    Все использованные материалы
+                                                </a>
+                                            </div>
+                                            <div class="object-info__link">
+                                                <a href="#object-works" class="caps-link js-anchor-scroll">
+                                                    Работы на объекте
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="object-info__links-bottom">
+                                            <div class="object-info__link">
+                                                <a href="/" class="arrow-link arrow-link">
+                                                    Следующий объект
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Карточка объекта -->
+
+                <!-- Описание объекта -->
+                <div class="section section--article">
+                    <div class="wrapper">
+                        <div class="section-content col-8 text-content">
+                            <p>Цементный завод — один из крупнейших объектов за всю историю компании. Поставлено и смонтировано свыше 100000 квадратных метров кровельных и фасадных материалов.</p>
+                            <p>Все вышеперечисленные материалы Компания Сталь ТД поставила и смонтировала для Цементного завода группы ЛСР строго в указанные договором сроки в Ленинградскую область, город Сланцы.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENd Описание объекта -->
+
+                <!-- Товары и категории -->
+                <div class="section" id="object-materials">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <h2>ВСЕ ИСПОЛЬЗОВАННЫЕ МАТЕРИАЛЫ</h2>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <!-- Main grid items -->
+                                <div class="grid__wr grid--hidden js-grid">
+                                    <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                    <div class="grid-sizer js-grid-sizer"></div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/product.html" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Профлист С8</div>
+                                                    </div>
+                                                    <div class="teaser__descr">
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">120</div>
+                                                            <div class="params-item__text">цветов, оттенков и паттернов</div>
+                                                        </div>
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">14</div>
+                                                            <div class="params-item__text">вариантов покрытий</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 300 ₽⁄м</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/product.html" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Профлист С8</div>
+                                                    </div>
+                                                    <div class="teaser__descr">
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">120</div>
+                                                            <div class="params-item__text">цветов, оттенков и паттернов</div>
+                                                        </div>
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">14</div>
+                                                            <div class="params-item__text">вариантов покрытий</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 300 ₽⁄м</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <div class="discount-angle">
+                                                <div class="discount-angle__value">-23%</div>
+                                            </div>
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/product-item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Маленькие саморезы для профлиста С10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 150 ₽⁄шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/product-item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Маленькие саморезы для профлиста С10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 150 ₽⁄шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/product.html" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Профлист С8</div>
+                                                    </div>
+                                                    <div class="teaser__descr">
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">120</div>
+                                                            <div class="params-item__text">цветов, оттенков и паттернов</div>
+                                                        </div>
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">14</div>
+                                                            <div class="params-item__text">вариантов покрытий</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 300 ₽⁄м</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/product.html" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Профлист С8</div>
+                                                    </div>
+                                                    <div class="teaser__descr">
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">120</div>
+                                                            <div class="params-item__text">цветов, оттенков и паттернов</div>
+                                                        </div>
+                                                        <div class="params-item">
+                                                            <div class="params-item__value">14</div>
+                                                            <div class="params-item__text">вариантов покрытий</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 300 ₽⁄м</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <div class="discount-angle">
+                                                <div class="discount-angle__value">-23%</div>
+                                            </div>
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/product-item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Маленькие саморезы для профлиста С10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 150 ₽⁄шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--vertical teaser--black js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__thumb">
+                                                <img class="teaser__img" src="/pic/items/product-item-1.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__info">
+                                                    <div class="teaser__title">
+                                                        <div class="item-title">Маленькие саморезы для профлиста С10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="teaser__price">
+                                                    <div class="data-text">от 150 ₽⁄шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--small teaser--blur teaser--white js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__bg">
+                                                <img class="teaser__img" src="/pic/items/item-2.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__icon">
+                                                    <img src="/pic/items/category-icon-2.svg" alt="Металлопрокат">
+                                                </div>
+                                                <div class="teaser__title">
+                                                    <div class="small-caps">Металлопрокат</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--small teaser--blur teaser--white js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__bg">
+                                                <img class="teaser__img" src="/pic/items/item-2.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__icon">
+                                                    <img src="/pic/items/category-icon-3.svg" alt="Сэндвич-панели">
+                                                </div>
+                                                <div class="teaser__title">
+                                                    <div class="small-caps">Сэндвич-панели</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="teaser teaser--small teaser--blur teaser--white js-grid-item">
+                                        <div class="teaser__wr">
+                                            <a href="/" class="teaser__link"></a>
+                                            <div class="teaser__bg">
+                                                <img class="teaser__img" src="/pic/items/item-2.png" alt="Название товара">
+                                            </div>
+                                            <div class="teaser__content">
+                                                <div class="teaser__icon">
+                                                    <img src="/pic/items/category-icon-10.svg" alt="Теплоизоляция">
+                                                </div>
+                                                <div class="teaser__title">
+                                                    <div class="small-caps">Теплоизоляция</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Main grid items -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Товары и категории -->
+
+                <!-- Услуги -->
+                <div class="section">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <h2>Услуги</h2>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <!-- Main grid items -->
+                                <div class="grid__wr grid--hidden js-grid">
+                                    <!-- grid-sizer обязателен для сетки внутри .js-grid -->
+                                    <div class="grid-sizer js-grid-sizer"></div>
+
+                                    <div class="category-teaser js-grid-item">
+                                        <div class="category-teaser__wr">
+                                            <a href="/" class="category-teaser__link"></a>
+                                            <div class="category-teaser__bg"></div>
+                                            <div class="category-teaser__icon">
+                                                <img class="category-teaser__img" src="/pic/catalog/catalog-item-1.png" alt="Монтаж заборов">
+                                            </div>
+                                            <div class="category-teaser__title">Монтаж заборов</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-teaser js-grid-item">
+                                        <div class="category-teaser__wr">
+                                            <a href="/" class="category-teaser__link"></a>
+                                            <div class="category-teaser__bg"></div>
+                                            <div class="category-teaser__icon">
+                                                <img class="category-teaser__img" src="/pic/catalog/catalog-item-1.png" alt="ОКРАСКА МЕТАЛЛА">
+                                            </div>
+                                            <div class="category-teaser__title">ОКРАСКА МЕТАЛЛА</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Main grid items -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Услуги -->
+
+                <!-- Объекты -->
+                <div class="section" id="object-works">
+                    <div class="wrapper">
+                        <div class="section-header">
+                            <div class="section-header">
+                                <h2>Похожие объекты в портфолио</h2>
+                            </div>
+                        </div>
+                        <div class="section-grid">
+                            <div class="grid">
+                                <div class="grid__wr">
+                                    <div class="object-item">
+                                        <div class="object-item__wr">
+                                            <div class="object-item__date">март 2017</div>
+                                            <a class="object-item__link" href="/"></a>
+                                            <div class="object-item__thumb">
+                                                <img class="object-item__img" src="/pic/portfolio/portfolio1.jpg" data-src="/pic/portfolio/portfolio1@2x.jpg" alt="Цементно-строительный комплекс «Paroc»">
+                                            </div>
+                                            <div class="object-item__content">
+                                                <div class="object-item__title">
+                                                    <div class="small-caps">Цементно-строительный комплекс «Paroc»</div>
+                                                </div>
+                                                <div class="object-item__descr">
+                                                    <div class="small-text">Тверская область, Конаковский район, пгт Изоплит</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="object-item">
+                                        <div class="object-item__wr">
+                                            <div class="object-item__date">март 2017</div>
+                                            <a class="object-item__link" href="/"></a>
+                                            <div class="object-item__thumb">
+                                                <img class="object-item__img" src="/pic/portfolio/portfolio5.jpg" data-src="/pic/portfolio/portfolio5@2x.jpg" alt="Дошкольное образовательное учреждение">
+                                            </div>
+                                            <div class="object-item__content">
+                                                <div class="object-item__title">
+                                                    <div class="small-caps">Дошкольное образовательное учреждение</div>
+                                                </div>
+                                                <div class="object-item__descr">
+                                                    <div class="small-text">Тосно, проспект Ленина, 71А</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="object-item">
+                                        <div class="object-item__wr">
+                                            <div class="object-item__date">март 2017</div>
+                                            <a class="object-item__link" href="/"></a>
+                                            <div class="object-item__thumb">
+                                                <img class="object-item__img" src="/pic/portfolio/portfolio3.jpg" data-src="/pic/portfolio/portfolio3@2x.jpg" alt="Цементный завод промышленно-строительной группы ЛСР">
+                                            </div>
+                                            <div class="object-item__content">
+                                                <div class="object-item__title">
+                                                    <div class="small-caps">Цементный завод промышленно-строительной группы ЛСР</div>
+                                                </div>
+                                                <div class="object-item__descr">
+                                                    <div class="small-text">Ленобласть, Сланцевское городское поселение, Сланцы</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Объекты -->
+
+            </main>
+
+            @@include('footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

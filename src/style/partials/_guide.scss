@@ -1,0 +1,104 @@
+/*
+ * COLORS
+ */
+$black: #1a1a1a;
+$light-black: #333333;
+$cool-blue: #548aba;
+$light-blue: #F3F9FD;
+$orange: #ff843b;
+$soft-blue: #6bb0ed;
+$white: #ffffff;
+$grey: #b3b3b3;
+$light-grey: #e6e6e6;
+$ultra-light-grey: #f2f2f2;
+$pale-grey: #f6f9fb;
+/* Additional colors*/
+$violet-metro: #9013FE;
+$red-metro: #D0021B;
+
+/*
+ * FONTS
+ */
+$basefontSize: 16;
+/*
+ * MIXINS
+ */
+/* Font */
+@mixin font ($size) {
+    $fontSize: 16;
+    font-size: $size + px;
+    font-size: ($size/$fontSize) + rem;
+}
+/* Style for placeholder */
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+@mixin placeholder {
+    @include optional-at-root ('::-webkit-input-placeholder') {
+        @content;
+    }
+    @include optional-at-root (':-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root ('::-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root (':-ms-input-placeholder') {
+        @content;
+    }
+}
+
+@mixin autofill {
+    @include optional-at-root (':-webkit-autofill') {
+        @content;
+    }
+    @include optional-at-root (':-webkit-autofill:focus input:-webkit-autofill') {
+        @content;
+    }
+    @include optional-at-root (':-webkit-autofill:hover') {
+        @content;
+    }
+}
+/*
+ * FUNCTIONS
+ */
+/* Pixel to rem */
+@function rem($val) {
+    @return #{$val / $basefontSize}rem;
+}
+/*
+ * Media queries
+ */
+$smPhone: 420px;
+$phone: 480px;
+$bigPhone: 640px;
+$smTablet: 768px;
+$tablet: 960px;
+$extraSmallDesktop: 1100px;
+$desktop: 1152px;
+$smallDesktop: 1280px;
+$bigDesktop: 1680px;
+$largeDesktop: 1920px;
+
+// Mixin Styling placeholder
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+@mixin placeholder {
+    @include optional-at-root ('::-webkit-input-placeholder') {
+        @content;
+    }
+    @include optional-at-root (':-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root ('::-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root (':-ms-input-placeholder') {
+        @content;
+    }
+}
